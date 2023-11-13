@@ -1,0 +1,569 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Aug 29 14:14:32 2022
+| Host         : sawtelles-lw1 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file FlySongSRAM_methodology_drc_routed.rpt -pb FlySongSRAM_methodology_drc_routed.pb -rpx FlySongSRAM_methodology_drc_routed.rpx
+| Design       : FlySongSRAM
+| Device       : xc7a15tftg256-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 98
++-----------+------------------+---------------------------------------------------+------------+
+| Rule      | Severity         | Description                                       | Violations |
++-----------+------------------+---------------------------------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                       | 1          |
+| LUTAR-1   | Warning          | LUT drives async reset alert                      | 4          |
+| TIMING-18 | Warning          | Missing input or output delay                     | 73         |
+| XDCH-1    | Warning          | Hold option missing in multicycle path constraint | 2          |
+| XDCH-2    | Warning          | Same min and max delay values on IO port          | 18         |
++-----------+------------------+---------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin okHI/core0/core0/a0/d0/dna0/CLK is not reached by a timing clock
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell okHI/core0/core0/a0/cb0/U0/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell okHI/core0/core0/a0/cb0/U0/ngwrdrst.grst.g7serrst.wr_rst_reg[1]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) okHI/core0/core0/a0/cb0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell okHI/core0/core0/l008c72ad3b3ec61be52cde84a395c4fa_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) okHI/core0/core0/a0/d0/l3ef837e59a131545b35a9a1962086cbf_reg/CLR, okHI/core0/core0/a0/d0/lc4da648cb12eeeb24e4d199c1195ed93_reg[5]/CLR, okHI/core0/core0/a0/d0/ldacb858842bc61590e084bcd54c8e356_reg/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[0]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[10]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[11]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[12]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[13]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[14]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[15]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[16]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[17]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[18]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[19]/CLR, okHI/core0/core0/a0/d0/le5e2e6110dd7478b8ed0143f21b04d30_reg[1]/CLR (the first 15 of 72 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell okHI/core0/core0/l9ca09c625f64b90bed25f2b6c26f6e53[3]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[0]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[10]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[11]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[12]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[13]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[14]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[15]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[16]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[17]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[18]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[19]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[1]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[20]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[21]/CLR, okHI/core0/core0/a0/l0c94b19b36beba84283b1c1a65aa73f3_reg[22]/CLR (the first 15 of 60 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[0] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[10] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[11] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[12] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[13] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[14] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[15] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[1] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[2] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[3] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[4] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[5] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[6] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[7] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[8] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on RAMdata[9] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on hi_aa relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on LED0Pin relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on LED1Pin relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[0] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[10] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[11] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[12] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[13] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[14] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[15] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[16] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[17] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[18] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[19] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[1] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[20] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[21] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[2] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[3] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[4] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[5] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[6] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[7] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[8] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on RAMadr[9] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on RAMoe relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on RAMwr relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on adccsPin relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An output delay is missing on auxioPin relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An output delay is missing on batEnablePin relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on cnvPin relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#52 Warning
+Missing input or output delay  
+An output delay is missing on led[4] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#53 Warning
+Missing input or output delay  
+An output delay is missing on led[5] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#54 Warning
+Missing input or output delay  
+An output delay is missing on led[6] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#55 Warning
+Missing input or output delay  
+An output delay is missing on led[7] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#56 Warning
+Missing input or output delay  
+An output delay is missing on mosiPin relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#57 Warning
+Missing input or output delay  
+An output delay is missing on sclkPin relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#58 Warning
+Missing input or output delay  
+An output delay is missing on tp[0] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#59 Warning
+Missing input or output delay  
+An output delay is missing on tp[10] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#60 Warning
+Missing input or output delay  
+An output delay is missing on tp[11] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#61 Warning
+Missing input or output delay  
+An output delay is missing on tp[12] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#62 Warning
+Missing input or output delay  
+An output delay is missing on tp[13] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#63 Warning
+Missing input or output delay  
+An output delay is missing on tp[14] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#64 Warning
+Missing input or output delay  
+An output delay is missing on tp[15] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#65 Warning
+Missing input or output delay  
+An output delay is missing on tp[1] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#66 Warning
+Missing input or output delay  
+An output delay is missing on tp[2] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#67 Warning
+Missing input or output delay  
+An output delay is missing on tp[3] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#68 Warning
+Missing input or output delay  
+An output delay is missing on tp[4] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#69 Warning
+Missing input or output delay  
+An output delay is missing on tp[5] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#70 Warning
+Missing input or output delay  
+An output delay is missing on tp[6] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#71 Warning
+Missing input or output delay  
+An output delay is missing on tp[7] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#72 Warning
+Missing input or output delay  
+An output delay is missing on tp[8] relative to clock(s) okHostClk
+Related violations: <none>
+
+TIMING-18#73 Warning
+Missing input or output delay  
+An output delay is missing on tp[9] relative to clock(s) okHostClk
+Related violations: <none>
+
+XDCH-1#1 Warning
+Hold option missing in multicycle path constraint  
+A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
+set_multicycle_path -setup -from [get_ports {hi_in[*]}] 2
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 64)
+Related violations: <none>
+
+XDCH-1#2 Warning
+Hold option missing in multicycle path constraint  
+A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
+set_multicycle_path -setup -from [get_ports {hi_inout[*]}] 2
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 60)
+Related violations: <none>
+
+XDCH-2#1 Warning
+Same min and max delay values on IO port  
+The same output delay of 8.900 ns has been defined on port 'hi_out[0]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 8.900 [get_ports {hi_out[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 66)
+Related violations: <none>
+
+XDCH-2#2 Warning
+Same min and max delay values on IO port  
+The same output delay of 8.900 ns has been defined on port 'hi_out[1]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 8.900 [get_ports {hi_out[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 66)
+Related violations: <none>
+
+XDCH-2#3 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[0]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#4 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[10]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#5 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[11]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#6 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[12]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#7 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[13]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#8 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[14]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#9 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[15]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#10 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[1]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#11 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[2]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#12 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[3]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#13 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[4]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#14 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[5]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#15 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[6]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#16 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[7]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#17 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[8]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+XDCH-2#18 Warning
+Same min and max delay values on IO port  
+The same output delay of 9.200 ns has been defined on port 'hi_inout[9]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
+set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
+P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+Related violations: <none>
+
+

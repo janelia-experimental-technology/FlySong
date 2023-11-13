@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Mar 10 11:23:01 2023
+# Process ID: 13880
+# Current directory: P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1504 P:\STERN\96CH_RECORDER\96chFlySongVersion2\FPGA\designFiles\FPGAwSRAM\FPGAwSRAM.xpr
+# Log file: P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/vivado.log
+# Journal file: P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.xpr
+update_compile_order -fileset sources_1
+close_project

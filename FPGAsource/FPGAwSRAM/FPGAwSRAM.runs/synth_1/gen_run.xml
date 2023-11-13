@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a15tftg256-1" LaunchTime="1661796582">
+  <File Type="PA-TCL" Name="FlySongSRAM.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="FlySongSRAM_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="FlySongSRAM_reports.tcl"/>
+  <File Type="RDS-RDS" Name="FlySongSRAM.vds"/>
+  <File Type="RDS-UTIL" Name="FlySongSRAM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FlySongSRAM_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="FlySongSRAM.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="FlySongSRAM_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="FlySongSRAM_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/div_gen_0/div_gen_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/96mic.srcs/sources_1/ip/div_gen_0/div_gen_0.xci"/>
+        <Attr Name="ImportTime" Val="1478276096"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/SPI.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/SPI.v"/>
+        <Attr Name="ImportTime" Val="1477692554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/TMP06.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/TMP06.v"/>
+        <Attr Name="ImportTime" Val="1478876611"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okBTPipeOut.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okBTPipeOut.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okCoreHarness.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okCoreHarness.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okLibrary.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okLibrary.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okWireIn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okWireIn.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okWireOut.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okWireOut.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/FlySongSRAM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/div_gen_0.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/96mic.srcs/sources_1/ip/div_gen_0.xcix"/>
+        <Attr Name="ImportTime" Val="1603203284"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okBTPipeIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okBTPipeIn.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okPipeIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okPipeIn.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okPipeOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okPipeOut.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okTriggerIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okTriggerIn.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okTriggerOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okTriggerOut.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/pipe_in_check.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/pipe_in_check.v"/>
+        <Attr Name="ImportTime" Val="1452814876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/pipe_out_check.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/pipe_out_check.v"/>
+        <Attr Name="ImportTime" Val="1452814876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/div_gen_1/div_gen_1.xci">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/96mic.srcs/sources_1/ip/div_gen_1/div_gen_1.xci"/>
+        <Attr Name="ImportTime" Val="1480976390"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FlySongSRAM"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/96mic/xem7001.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/xem7001.xdc"/>
+        <Attr Name="ImportTime" Val="1477694540"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
+</GenRun>

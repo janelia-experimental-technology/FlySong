@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a15tftg256-1" LaunchTime="1661796582">
+  <File Type="BITSTR-BMM" Name="FlySongSRAM_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="FlySongSRAM_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="FlySongSRAM_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="FlySongSRAM_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="FlySongSRAM.tcl"/>
+  <File Type="OPT-TIMING" Name="FlySongSRAM_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="FlySongSRAM_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="FlySongSRAM_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="FlySongSRAM_reports.tcl"/>
+  <File Type="OPT-DRC" Name="FlySongSRAM_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="FlySongSRAM.hwdef"/>
+  <File Type="PWROPT-DCP" Name="FlySongSRAM_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="FlySongSRAM_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="FlySongSRAM_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="FlySongSRAM_placed.dcp"/>
+  <File Type="PLACE-IO" Name="FlySongSRAM_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="FlySongSRAM_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="FlySongSRAM_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="FlySongSRAM_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="FlySongSRAM_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="FlySongSRAM_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="FlySongSRAM_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="FlySongSRAM.bgn"/>
+  <File Type="PLACE-TIMING" Name="FlySongSRAM_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="FlySongSRAM_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="FlySongSRAM.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="FlySongSRAM_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="FlySongSRAM_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="FlySongSRAM_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="FlySongSRAM.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="FlySongSRAM_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="FlySongSRAM_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="FlySongSRAM_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="FlySongSRAM_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="FlySongSRAM_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="FlySongSRAM_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="FlySongSRAM.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="FlySongSRAM_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="FlySongSRAM.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="FlySongSRAM_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="FlySongSRAM_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="FlySongSRAM.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="FlySongSRAM_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="FlySongSRAM_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="FlySongSRAM_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="FlySongSRAM_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="FlySongSRAM_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="FlySongSRAM_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="FlySongSRAM_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="FlySongSRAM_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="FlySongSRAM_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="FlySongSRAM_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="FlySongSRAM_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="FlySongSRAM_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="FlySongSRAM_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="FlySongSRAM_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="FlySongSRAM_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="FlySongSRAM_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="FlySongSRAM_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="FlySongSRAM_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="FlySongSRAM_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="FlySongSRAM.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="FlySongSRAM_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="FlySongSRAM.rbt"/>
+  <File Type="BITSTR-NKY" Name="FlySongSRAM.nky"/>
+  <File Type="BG-DRC" Name="FlySongSRAM.drc"/>
+  <File Type="RDI-RDI" Name="FlySongSRAM.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/div_gen_0/div_gen_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/96mic.srcs/sources_1/ip/div_gen_0/div_gen_0.xci"/>
+        <Attr Name="ImportTime" Val="1478276096"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/SPI.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/SPI.v"/>
+        <Attr Name="ImportTime" Val="1477692554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/TMP06.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/TMP06.v"/>
+        <Attr Name="ImportTime" Val="1478876611"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okBTPipeOut.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okBTPipeOut.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okCoreHarness.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okCoreHarness.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okLibrary.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okLibrary.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okWireIn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okWireIn.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okWireOut.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okWireOut.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/FlySongSRAM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/div_gen_0.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/96mic.srcs/sources_1/ip/div_gen_0.xcix"/>
+        <Attr Name="ImportTime" Val="1603203284"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okBTPipeIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okBTPipeIn.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okPipeIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okPipeIn.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okPipeOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okPipeOut.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okTriggerIn.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okTriggerIn.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/okTriggerOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/okTriggerOut.v"/>
+        <Attr Name="ImportTime" Val="1457997682"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/pipe_in_check.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/pipe_in_check.v"/>
+        <Attr Name="ImportTime" Val="1452814876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/96mic/pipe_out_check.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/pipe_out_check.v"/>
+        <Attr Name="ImportTime" Val="1452814876"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/div_gen_1/div_gen_1.xci">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/96mic.srcs/sources_1/ip/div_gen_1/div_gen_1.xci"/>
+        <Attr Name="ImportTime" Val="1480976390"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="FlySongSRAM"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/96mic/xem7001.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../FPGA/96mic_XEM7001/96mic-SRAM/xem7001.xdc"/>
+        <Attr Name="ImportTime" Val="1477694540"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
+</GenRun>

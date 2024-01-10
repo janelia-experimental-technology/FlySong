@@ -1,6 +1,8 @@
 # FlySong
 Song Torrent: A 96 Chamber Fly Courtship Recording Array.
 
+[Preprint](https://www.biorxiv.org/content/10.1101/2024.01.09.574712v1)
+
 The 96 Chamber Array and open-source software was designed to provide high throughput acquisition of Drosophila fly courtship songs. 
 Up to 96 separate chambers can be recorded simultaneously along with temperature data for each chamber. Chambers are designed as three 
 arrays of 32 chambers each and have sliding partitions to allow loading of separated males and females. The chambers can be top loaded

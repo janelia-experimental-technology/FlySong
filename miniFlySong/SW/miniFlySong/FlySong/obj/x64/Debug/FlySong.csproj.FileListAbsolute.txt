@@ -1,0 +1,16 @@
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\FlySong.csproj.AssemblyReference.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\cshrp_form.Form1.resources
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\FlySong.Properties.Resources.resources
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\FlySong.csproj.GenerateResource.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\FlySong.csproj.CoreCompileInputs.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Debug\FlySong.exe.config
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Debug\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Debug\FlySong.application
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Debug\FlySong.exe
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Debug\FlySong.pdb
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Debug\libFrontPanel-csharp.dll
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\FlySong.application
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\FlySong.csproj.CopyComplete
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\FlySong.exe
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Debug\FlySong.pdb

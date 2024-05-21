@@ -1,0 +1,120 @@
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\x64\Release\FlySong.exe.config
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\x64\Release\libFrontPanel-csharp.dll
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\x64\Release\FlySong.csprojResolveAssemblyReference.cache
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\x64\Release\cshrp_form.Form1.resources
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\x64\Release\cshrp_form.Properties.Resources.resources
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\x64\Release\FlySong.csproj.GenerateResource.Cache
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\bin\x64\Release\FlySong.exe.config
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\bin\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\bin\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\bin\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\bin\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\bin\x64\Release\libFrontPanel-csharp.dll
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\obj\x64\Release\FlySong.csprojResolveAssemblyReference.cache
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\obj\x64\Release\cshrp_form.Form1.resources
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\obj\x64\Release\cshrp_form.Properties.Resources.resources
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\obj\x64\Release\FlySong.csproj.GenerateResource.Cache
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\obj\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\obj\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\obj\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\SOFTWARE\cshrp-form-XEM7001\cshrp-form\obj\x64\Release\FlySong.pdb
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.exe.config
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.exe.manifest
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.application
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.exe
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.pdb
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\libFrontPanel-csharp.dll
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.csprojResolveAssemblyReference.cache
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\cshrp_form.Form1.resources
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.Properties.Resources.resources
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.csproj.GenerateResource.Cache
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.exe.manifest
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.application
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.exe
+C:\PROJECTS\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.exe.config
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\bin\x64\Release\libFrontPanel-csharp.dll
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.csprojResolveAssemblyReference.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\cshrp_form.Form1.resources
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.Properties.Resources.resources
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.csproj.GenerateResource.Cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong\FlySong\obj\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.exe.config
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\bin\x64\Release\libFrontPanel-csharp.dll
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.AssemblyReference.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\cshrp_form.Form1.resources
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.Properties.Resources.resources
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.GenerateResource.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.CoreCompileInputs.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.CopyComplete
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.AssemblyReference.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\cshrp_form.Form1.resources
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.Properties.Resources.resources
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.GenerateResource.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.CoreCompileInputs.cache
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.exe.config
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.exe
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.pdb
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\libFrontPanel-csharp.dll
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.exe.manifest
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.application
+P:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.CopyComplete
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.exe.config
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.exe.manifest
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.application
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.exe
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\FlySong.pdb
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\bin\x64\Release\libFrontPanel-csharp.dll
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.AssemblyReference.cache
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\cshrp_form.Form1.resources
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.Properties.Resources.resources
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.GenerateResource.cache
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.CoreCompileInputs.cache
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.exe.manifest
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.application
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.csproj.CopyComplete
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.exe
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong 20230118\FlySong\FlySong\obj\x64\Release\FlySong.pdb
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\bin\x64\Release\FlySong.exe.config
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\bin\x64\Release\FlySong.exe.manifest
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\bin\x64\Release\FlySong.application
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\bin\x64\Release\FlySong.exe
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\bin\x64\Release\FlySong.pdb
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\bin\x64\Release\libFrontPanel-csharp.dll
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\FlySong.csproj.AssemblyReference.cache
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\cshrp_form.Form1.resources
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\FlySong.Properties.Resources.resources
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\FlySong.csproj.GenerateResource.cache
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\FlySong.csproj.CoreCompileInputs.cache
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\FlySong.exe.manifest
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\FlySong.application
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\FlySong.csproj.CopyComplete
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\FlySong.exe
+Z:\STERN\96CH_RECORDER\96chFlySongVersion2\SOFTWARE\1stick\FlySong\FlySong\FlySong\obj\x64\Release\FlySong.pdb

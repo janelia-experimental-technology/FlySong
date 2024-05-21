@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlySong.exe" size="59904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FlySong.exe" size="60416">
       <assemblyIdentity name="FlySong" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>23L0LRZDzGNoPf4RQFGfO3W9epuTVO4cdCf224bgUAQ=</dsig:DigestValue>
+        <dsig:DigestValue>sFjP1y5yUZKqys08CplK8h3IXc0Q642SKQVeo6yPIfM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -65,13 +65,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="FlySong.exe.config" size="186">
+  <file name="FlySong.exe.config" size="184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GUHS+OFx1101tsQAmSxc2HiZ6DFfxLEUn0Es0Znho/o=</dsig:DigestValue>
+      <dsig:DigestValue>FihlZtVNgcNyH37Pf0Jtll3jZOm+L55ijXNjtoS2/mo=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

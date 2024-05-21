@@ -1,0 +1,10 @@
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\Debug\cshrp-form.exe.config
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\Debug\cshrp-form.exe
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\Debug\cshrp-form.pdb
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\Debug\cshrp-form.csprojResolveAssemblyReference.cache
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\Debug\cshrp_form.Form1.resources
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\Debug\cshrp_form.Properties.Resources.resources
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\Debug\cshrp-form.csproj.GenerateResource.Cache
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\Debug\cshrp-form.exe
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\obj\Debug\cshrp-form.pdb
+Y:\PROJECTS\STERN\96CH_RECORDER\SOFTWARE\cshrp-form\cshrp-form\bin\Debug\libFrontPanel-csharp.dll

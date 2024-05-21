@@ -114,6 +114,10 @@ set_property IOSTANDARD LVCMOS33 [get_ports {misoPins[*]}]
 set_property PACKAGE_PIN R3 [get_ports {auxioPin}]
 set_property IOSTANDARD LVCMOS33 [get_ports {auxioPin}]
 
+# serial out ###############################################################
+set_property PACKAGE_PIN M2 [get_ports {serialPin}]
+set_property IOSTANDARD LVCMOS33 [get_ports {serialPin}]
+
 # LED drivers ################################################################
 set_property PACKAGE_PIN L2 [get_ports {LED0Pin}]
 set_property IOSTANDARD LVCMOS33 [get_ports {LED0Pin}]

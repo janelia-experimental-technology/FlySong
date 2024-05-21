@@ -7,6 +7,19 @@
 // === VERSIONS === 
 // NOTE!! be sure to update VERSIONYEAR and VERSIONDATE to match version number
 
+// 20240430 sws
+// - add initilaize bit for one time setups 
+// - working, with green as well
+
+// 20240423 sws
+// - put LED fifo back to 511
+// - serial control seems to work. No GRN but that;s beacuse it's not passed over from FlySong - errors there
+
+// 20240418 sws
+// - add in serial control of RGB boards
+// - reduce LED fifo from 511 to 256 - having compile problems  
+// - comment out reg temp[31:0] in pipe_out_check.v
+
 // 20220824 sws
 // - reduce frame count from 16 bits to 6 so we can store it with LED1 (FRAMECNT [15:10], LED1 [9:0])
 
@@ -171,23 +184,25 @@ module FlySongSRAM(
     output wire        auxioPin,         // auxilliary I/O BNC
          
     output wire        batEnablePin,    // enable battery to system, high is on
-    input wire         batStatePin,     // check staus of battery voltage, high is good
+    input wire         batStatePin,     // check status of battery voltage, high is good
     
     inout wire [15:0]  RAMdata,         // SRAM data lines 
     output wire [21:0] RAMadr,          // SRAM address lines
     output wire        RAMoe,           // SRAM output enable
-    output wire        RAMwr            // SRAM write line
+    output wire        RAMwr,           // SRAM write line
+    
+    output wire       serialPin         // serial out to RGB board
 
 	);
 	
 
-parameter YEAR = 16'd2022;    
-parameter DATE = 16'd0824;    	
+parameter YEAR = 16'd2024;    
+parameter DATE = 16'd0430;    	
 parameter FIFOLEN = 16'h8000;
 parameter LEDFIFOLEN = 16'd511;
 
 // Endpoint connections:
-wire [15:0]  ep00wire, clksPerSmp, numChs, LED0, LED1, LED2, LEDtime, status, syncRate, maxAdrLOW, maxAdrHOW;
+wire [15:0]  ep00wire, clksPerSmp, numChs, LED0, LED1, LED2, IRpc, LEDtime, status, syncRate, maxAdrLOW, maxAdrHOW;
 //wire [15:0]  tmpdata;
 wire [15:0]  VERSIONDATE;
 wire [15:0]  VERSIONYEAR;	
@@ -224,6 +239,7 @@ reg         start;
 wire        do_reset;
 wire        adc_start;
 wire        LEDEnable;
+wire        initialize;
 reg         po_ready; 
 reg [7:0]   command;
 reg [2:0]   cmdcnt;
@@ -264,10 +280,11 @@ assign maxAdrLOW = maxBuffer[15:0];
 assign maxAdrHOW = maxBuffer[31:16]; 
 
 assign batEnablePin = ep00wire[0];
-assign do_reset = ep00wire[2];
+assign do_reset = ep00wire[2];    // '1' is reset state
 assign adc_start = ep00wire[4];
 assign tmp_start = ep00wire[5];
 assign LEDEnable = ep00wire[6];
+assign initialize = ep00wire[7];  
 assign pipe_out_ready = po_ready;
 
 reg syncOut;
@@ -352,6 +369,15 @@ reg tpreg2;
 reg [15:0] LED0bright;
 reg [15:0] LED1bright;
 reg [15:0] LED2bright;
+reg [15:0] IRbright;
+reg [15:0] LED0DAC;
+reg [15:0] LED1DAC;
+reg [15:0] LED2DAC;
+reg [15:0] IRDAC;
+reg [15:0] LED0DAClast;
+reg [15:0] LED1DAClast;
+reg [15:0] LED2DAClast;
+reg [15:0] IRDAClast;
 wire LED0invert;
 wire LED1invert;
 
@@ -359,6 +385,8 @@ assign LED0Pin = LED0drive;
 assign LED1Pin = LED1drive;
 assign LED0invert = LED0InvPin;
 assign LED1invert = LED1InvPin;
+
+
 
 // read in LED brightness and times 
 
@@ -418,7 +446,11 @@ begin
  //      tpreg = 1'b0;    
        LED0bright <= 16'd0;  
        LED1bright <= 16'd0;  
-       LED2bright <= 16'd0;   
+       LED2bright <= 16'd0;  
+       LED0DAC <= 16'd0;
+	   LED1DAC <= 16'd0;
+	   LED2DAC <= 16'd0; 
+
     end
     else
     begin
@@ -429,11 +461,15 @@ begin
                 LED0bright <= LED0BrightFIFO[0]; 
                 LED1bright <= LED1BrightFIFO[0];
                 LED2bright <= LED2BrightFIFO[0];
+                // We need DAC values for the serial output to the RGB  - approximate with %*10 * 2 (1000 -> 2000 ~= 2047)
+				LED0DAC <= LED0BrightFIFO[0] << 2;
+				LED1DAC <= LED1BrightFIFO[0] << 2;
+				LED2DAC <= LED2BrightFIFO[0] << 2;
                 LEDptr <= 8'd0; 
                 LEDstate <= LEDwait;
   //              tpreg <= 1'b1;
             end
-          LEDwait:
+         LEDwait:
             begin
               if( ledtimer >= LEDTimeFIFO[LEDptr] )    // if timer has reached next setting 
               begin                   
@@ -449,6 +485,9 @@ begin
                  LED0bright <= LED0BrightFIFO[LEDptr]; 
                  LED1bright <= LED1BrightFIFO[LEDptr]; 
                  LED2bright <= LED2BrightFIFO[LEDptr]; 
+				 LED0DAC <= LED0BrightFIFO[LEDptr] << 1;
+				 LED1DAC <= LED1BrightFIFO[LEDptr] << 1;
+				 LED2DAC <= LED2BrightFIFO[LEDptr] << 1;                 
                  LEDstate <= LEDwait;
  //                tpreg <= ~tpreg;
               end
@@ -460,9 +499,12 @@ begin
           LEDend:
              begin
                 //dutycycle0 <= 16'd0;  // LEDs off at end
-               LED0bright <=- 16'd0;
-               LED1bright <=- 16'd0;
-               LED2bright <=- 16'd0;
+               LED0bright <= 16'd0;
+               LED1bright <= 16'd0;
+               LED2bright <= 16'd0;
+  		       LED0DAC <= 16'd0;
+			   LED1DAC <= 16'd0;
+			   LED2DAC <= 16'd0;	             
  //               tpreg <= 1'b0;
              end    
          endcase   //       
@@ -594,6 +636,275 @@ begin
 end
 
 // ========= end LED driver =======
+
+
+
+// send LED updates out serial command port
+
+reg [7:0] SPwaitClock;
+
+localparam WAITTIME = 8'd20;
+reg initialized;
+
+reg [7:0] serialBuffer[63:0];  // 64 command buffer 
+reg [5:0] sbIdxIn;             
+reg [5:0] sbIdxOut;
+reg SPdrive;
+assign serialPin = SPdrive;
+
+localparam INTENSITYHON = 	8'b11100000;  // 0xc0
+localparam INTENSITYMON = 	8'b11010000;  // 0xd0
+localparam INTENSITYLON = 	8'b11000000;  // 0xe0
+localparam SETCOLORQ0 = 	8'b10000000;  // 0x80
+localparam SETCOLORQ1 =     8'b10000100;
+localparam SETCOLORQ2 =     8'b10001000;
+localparam SETCOLORQ3 =     8'b10001100;
+localparam SETQUADSON =     8'b01001111;
+localparam BLU = 			8'b00000000;  // 0x00
+localparam GRN =			8'b00000001;  // 0x01
+localparam RED = 			8'b00000010;  // 0x02
+localparam IR =             8'b00000011;  
+localparam SERIES = 		8'b11110100;  // 0xf4
+localparam ENUMERATE =		8'b11110001;  // 0xf1
+localparam SETOFF = 		8'b00000000;  // 0x00
+localparam ALLON  = 		8'b11111111;  // 0xff 
+localparam ALLOFF = 		8'b11110000;  // 0xf0
+
+
+// read in IR brightness 
+
+always @(posedge ti_clk) 
+begin
+   IRbright <= IRpc ;  // brightness, compensate for index starting at 1
+   IRDAC <= IRbright << 2;   // 4095 max (we will use 4000 to make it simple)   
+end    
+
+
+always @(posedge ti_clk) 
+begin
+  if (initialize == 1'b1) 
+  begin
+     sbIdxIn <= 6'd0;
+     initialized <= 1'b0;
+     LED0DAClast <= 16'd0;
+	 LED1DAClast <= 16'd0;
+	 LED2DAClast <= 16'd0; 
+	 IRDAClast <= 16'd0;
+  end 
+  else
+  begin 
+      if( initialized == 1'b0 )  // first one?, then reset RGB boards
+      begin  
+	    serialBuffer[sbIdxIn] <= SETQUADSON;
+//	   serialBuffer[sbIdxIn+1] <= ENUMERATE;
+//	   serialBuffer[sbIdxIn+2] <= SETOFF;  
+ 	    sbIdxIn <= sbIdxIn + 6'd1;
+	    initialized <= 1'b1;   // flag that we have done this
+      end
+      else
+//    begin
+	  if( LED0DAC != LED0DAClast )
+	  begin
+        serialBuffer[sbIdxIn] <= INTENSITYHON | LED0DAC[11:8];  
+    	serialBuffer[sbIdxIn+1] <= INTENSITYMON | LED0DAC[7:4]; 
+        serialBuffer[sbIdxIn+2] <= INTENSITYLON | LED0DAC[3:0];   	    	  
+        serialBuffer[sbIdxIn+3] <= SETCOLORQ0 | RED;   
+        serialBuffer[sbIdxIn+4] <= SETQUADSON;   	
+//        serialBuffer[sbIdxIn+4] <= SETCOLORQ1 | RED;  // 7x7 only has one DAC, would need these for 5x5
+//        serialBuffer[sbIdxIn+5] <= SETCOLORQ2 | RED; 
+//        serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | RED;      
+        serialBuffer[sbIdxIn+5] <= ALLON;
+	    sbIdxIn <= sbIdxIn + 6'd6;
+        LED0DAClast <= LED0DAC;  		
+      end 
+      else 
+      if( LED1DAC != LED1DAClast )
+      begin
+        serialBuffer[sbIdxIn] <= INTENSITYHON | LED1DAC[11:8];
+  	    serialBuffer[sbIdxIn+1] <= INTENSITYMON | LED1DAC[7:4];
+	    serialBuffer[sbIdxIn+2] <= INTENSITYLON | LED1DAC[3:0];   	  
+        serialBuffer[sbIdxIn+3] <= SETCOLORQ0 | GRN;   	
+        serialBuffer[sbIdxIn+4] <= SETQUADSON;
+//        serialBuffer[sbIdxIn+4] <= SETCOLORQ1 | GRN;   
+//        serialBuffer[sbIdxIn+5] <= SETCOLORQ2 | GRN; 
+//        serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | GRN;  
+        serialBuffer[sbIdxIn+5] <= ALLON;
+	    sbIdxIn <= sbIdxIn + 6'd6;
+	    LED1DAClast <= LED1DAC;
+	  end
+	  else
+      if( LED2DAC != LED2DAClast )
+      begin
+        serialBuffer[sbIdxIn] <= INTENSITYHON | LED2DAC[11:8];
+        serialBuffer[sbIdxIn+1] <= INTENSITYMON | LED2DAC[7:4];
+        serialBuffer[sbIdxIn+2] <= INTENSITYLON | LED2DAC[3:0];   	  
+        serialBuffer[sbIdxIn+3] <= SETCOLORQ0 | BLU; 
+        serialBuffer[sbIdxIn+4] <= SETQUADSON;  	
+ //       serialBuffer[sbIdxIn+4] <= SETCOLORQ1 | BLU;   
+ //       serialBuffer[sbIdxIn+5] <= SETCOLORQ2 | BLU; 
+ //       serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | BLU; 	  
+        serialBuffer[sbIdxIn+5] <= ALLON;
+	    sbIdxIn <= sbIdxIn + 6'd6;
+        LED2DAClast <= LED2DAC;
+      end  
+	  else
+      if( IRDAC != IRDAClast )
+      begin
+        serialBuffer[sbIdxIn] <= INTENSITYHON | IRDAC[11:8];
+        serialBuffer[sbIdxIn+1] <= INTENSITYMON | IRDAC[7:4];
+        serialBuffer[sbIdxIn+2] <= INTENSITYLON | IRDAC[3:0];   	  
+        serialBuffer[sbIdxIn+3] <= SETCOLORQ0 | IR;   	
+//        serialBuffer[sbIdxIn+4] <= SETCOLORQ1 | IR;   
+//        serialBuffer[sbIdxIn+5] <= SETCOLORQ2 | IR; 
+//        serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | IR; 	  
+//        serialBuffer[sbIdxIn+4] <= ALLON;
+	    sbIdxIn <= sbIdxIn + 6'd4;
+        IRDAClast <= IRDAC;
+      end  // end ifelse for color check           
+//    end // 1st check   	
+  end  // LED enable check	
+end // serial buffer routine
+
+
+// Serial Output
+localparam[3:0]   // serial port output states
+	SPidle = 4'd0,
+	SPstart= 4'd1,
+	SPbit0 = 4'd2,
+	SPbit1 = 4'd3,
+	SPbit2 = 4'd4,
+	SPbit3 = 4'd5,
+	SPbit4 = 4'd6,
+	SPbit5 = 4'd7,
+	SPbit6 = 4'd8,
+	SPbit7 = 4'd9,
+	SPstop = 4'd10,
+	SPwait = 4'd11;
+	
+reg [3:0] SPstate;	
+reg [7:0] SPclock;
+ 
+always @(posedge ti_clk) 
+begin
+  if (initialize == 1'b1) 
+  begin
+     SPdrive <= 1'b1;
+     SPstate <= SPidle;
+     sbIdxOut <= 6'd0;
+  end
+  else
+  begin    
+    // serial clock is 48e6 /250e3 = 192
+    if( SPclock < 8'd192 )
+	begin
+	    SPclock <= SPclock + 8'b00000001;
+	end
+	else
+	begin	
+	    SPclock <= 8'b00000000;
+		if( sbIdxIn != sbIdxOut )  // new byte to go out
+		begin
+		
+			case (SPstate)
+				
+				SPidle:
+				begin	
+					SPdrive <= 1'b1;  // idle high				
+					SPstate <= SPstart;
+				end
+				
+				SPstart:
+				begin
+					SPdrive <= 1'b0;
+					SPstate <= SPbit0;
+				end	
+				
+				SPbit0:
+				begin
+					SPdrive <= serialBuffer[sbIdxOut][0];
+					SPstate <= SPbit1;
+				end	
+				
+				SPbit1:
+				begin
+					SPdrive <= serialBuffer[sbIdxOut][1];
+					SPstate <= SPbit2;
+				end
+				
+				SPbit2:
+				begin
+					SPdrive <= serialBuffer[sbIdxOut][2];
+					SPstate <= SPbit3;
+				end			
+				
+				SPbit3:
+				begin
+					SPdrive <= serialBuffer[sbIdxOut][3];
+					SPstate <= SPbit4;
+				end 
+				
+				SPbit4:
+				begin
+					SPdrive <= serialBuffer[sbIdxOut][4];
+					SPstate <= SPbit5;
+				end			
+				
+				SPbit5:
+				begin
+					SPdrive <= serialBuffer[sbIdxOut][5];
+					SPstate <= SPbit6;
+				end			
+				
+				SPbit6:
+				begin
+					SPdrive <= serialBuffer[sbIdxOut][6];
+					SPstate <= SPbit7;
+				end			
+				
+				SPbit7:
+				begin
+					SPdrive <= serialBuffer[sbIdxOut][7];
+					SPstate <= SPstop;
+				end		
+				
+				SPstop:
+				begin
+					SPdrive <= 1'b1;
+					if( serialBuffer[sbIdxOut] == ENUMERATE )  // enumerate command needs time to propogate
+					begin
+						SPstate <= SPwait;
+						SPwaitClock <= 8'd0;
+					end
+					else
+					begin
+						SPstate <= SPstart;
+						sbIdxOut <= sbIdxOut + 6'd1;  // point to next byte
+					end
+				end	
+				
+				SPwait:
+				begin 
+				   SPwaitClock <= SPwaitClock + 8'd1;
+				   if( SPwaitClock >= WAITTIME )
+				   begin
+				      	SPstate <= SPstart;
+						sbIdxOut <= sbIdxOut + 6'd1;  // point to next byte
+				   end
+				end
+				
+				default:
+				begin
+				   SPstate <= SPidle;
+				end
+			endcase	
+		end  // if new data to send
+    end // if time for next bit
+  end // if reset  
+end  // serial output routine
+
+
+// ========= end LED driver =======
+
 
 // ===============================
 // === Run the ADC SPI port ======  
@@ -1092,14 +1403,22 @@ begin
 end  // data out
 
 
- assign led[5:0] = frameCount[5:0]; //adcstate[3:0];
+ assign led[6:0] = IRDAC[6:0]; //~LEDptr[3:0]; //adcstate[3:0];
+ //assign led[4] = do_reset;
+ //assign led[5] = LEDEnable;
+// assign led[6] = 1'b1;
 
 
 // assign tp[4:0] = portIn[4:0]; //adcstate[3:0];
-  assign tp[0] = tenPin;
-  assign tp[1] = cnvPin;
-  assign tp[2] = tmpPin;
-  assign tp[3] = start;
+  assign tp[0] = SPstate[0];
+  assign tp[1] = SPstate[1];
+  assign tp[2] = SPstate[2];
+  assign tp[3] = SPstate[3];
+  assign tp[4] = sbIdxIn[0];
+  assign tp[5] = sbIdxOut[0];
+  assign tp[6] = SPclock[6];
+  assign tp[7] = SPdrive;
+  
 
                                   
 SPI   adc1     
@@ -1157,6 +1476,7 @@ okWireIn     wi0B (.ok1(ok1),                           .ep_addr(8'h0b), .ep_dat
 okWireIn     wi0C (.ok1(ok1),                           .ep_addr(9'h0c), .ep_dataout(syncRate));
 okWireIn     wi0D (.ok1(ok1),                           .ep_addr(8'h0d), .ep_dataout(LED1));
 okWireIn     wi0E (.ok1(ok1),                           .ep_addr(8'h0e), .ep_dataout(LED2));
+okWireIn     wi0F (.ok1(ok1),                           .ep_addr(8'h0f), .ep_dataout(IRpc));
 
 okWireOut    wo23 (.ok1(ok1), .ok2(ok2x[ 4*17 +: 17 ]), .ep_addr(8'h23), .ep_datain(maxAdrLOW));
 okWireOut    wo24 (.ok1(ok1), .ok2(ok2x[ 5*17 +: 17 ]), .ep_addr(8'h24), .ep_datain(maxAdrHOW));

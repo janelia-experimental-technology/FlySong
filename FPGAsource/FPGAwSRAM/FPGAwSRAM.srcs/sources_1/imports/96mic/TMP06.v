@@ -77,14 +77,14 @@ assign tenPin  = 1'b1;  //tensig;
 
 assign testdata = testdatad;
 
-assign tp[7:4] = state[3:0];
-assign tp[8] = overflow;
-assign tp[9] = thrshld;
-assign tp[10] = lowover;
+//assign tp[7:4] = state[3:0];
+//assign tp[8] = overflow;
+//assign tp[9] = thrshld;
+////assign tp[10] = lowover;
 //assign led[7] = tmpPin;
 //assign led[6] = start;
-assign tp[15:12] = tempch[3:0];
-assign tp[11] = glitch;
+//assign tp[15:12] = tempch[3:0];
+//assign tp[11] = glitch;
 
 
 // Temperature measurement

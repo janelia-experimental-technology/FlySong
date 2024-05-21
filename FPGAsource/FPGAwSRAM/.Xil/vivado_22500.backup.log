@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun May 12 11:00:05 2024
+# Process ID: 22500
+# Current directory: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17720 Z:\STERN\96CH_RECORDER\96chFlySongVersion2\FPGA\designFiles\FPGAwSRAM 20221212\FPGAwSRAM\FPGAwSRAM.xpr
+# Log file: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/vivado.log
+# Journal file: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 865.027 ; gain = 220.828
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 951.176 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sun May 12 11:02:45 2024] Launched synth_1...
+Run output will be captured here: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Sun May 12 11:02:45 2024] Launched impl_1...
+Run output will be captured here: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 951.176 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 12 13:23:20 2024...

@@ -2,12 +2,12 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Aug 29 14:09:47 2022
-# Process ID: 19532
-# Current directory: P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1
+# Start of session at: Sun May 12 11:02:47 2024
+# Process ID: 21304
+# Current directory: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1
 # Command line: vivado.exe -log FlySongSRAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FlySongSRAM.tcl
-# Log file: P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1/FlySongSRAM.vds
-# Journal file: P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1\vivado.jou
+# Log file: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/FlySongSRAM.vds
+# Journal file: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source FlySongSRAM.tcl -notrace
 Command: synth_design -top FlySongSRAM -part xc7a15tftg256-1
@@ -20,20 +20,50 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a15t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a15t'
 INFO: [Device 21-403] Loading part xc7a15tftg256-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17364 
-WARNING: [Synth 8-2292] literal value truncated to fit in 10 bits [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:164]
+INFO: Helper process launched with PID 3088 
+WARNING: [Synth 8-2292] literal value truncated to fit in 10 bits [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:164]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 715.453 ; gain = 182.789
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 808.906 ; gain = 182.574
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'FlySongSRAM' [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:145]
-	Parameter YEAR bound to: 16'b0000011111100110 
-	Parameter DATE bound to: 16'b0000001100111000 
+INFO: [Synth 8-6157] synthesizing module 'FlySongSRAM' [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:157]
+	Parameter YEAR bound to: 16'b0000011111101000 
+	Parameter DATE bound to: 16'b0000000110101110 
 	Parameter FIFOLEN bound to: 16'b1000000000000000 
 	Parameter LEDFIFOLEN bound to: 16'b0000000111111111 
 	Parameter LEDstart bound to: 2'b00 
 	Parameter LEDwait bound to: 2'b01 
 	Parameter LEDnext bound to: 2'b10 
 	Parameter LEDend bound to: 2'b11 
+	Parameter WAITTIME bound to: 8'b00010100 
+	Parameter INTENSITYHON bound to: 8'b11100000 
+	Parameter INTENSITYMON bound to: 8'b11010000 
+	Parameter INTENSITYLON bound to: 8'b11000000 
+	Parameter SETCOLORQ0 bound to: 8'b10000000 
+	Parameter SETCOLORQ1 bound to: 8'b10000100 
+	Parameter SETCOLORQ2 bound to: 8'b10001000 
+	Parameter SETCOLORQ3 bound to: 8'b10001100 
+	Parameter SETQUADSON bound to: 8'b01001111 
+	Parameter BLU bound to: 8'b00000000 
+	Parameter GRN bound to: 8'b00000001 
+	Parameter RED bound to: 8'b00000010 
+	Parameter IR bound to: 8'b00000011 
+	Parameter SERIES bound to: 8'b11110100 
+	Parameter ENUMERATE bound to: 8'b11110001 
+	Parameter SETOFF bound to: 8'b00000000 
+	Parameter ALLON bound to: 8'b11111111 
+	Parameter ALLOFF bound to: 8'b11110000 
+	Parameter SPidle bound to: 4'b0000 
+	Parameter SPstart bound to: 4'b0001 
+	Parameter SPbit0 bound to: 4'b0010 
+	Parameter SPbit1 bound to: 4'b0011 
+	Parameter SPbit2 bound to: 4'b0100 
+	Parameter SPbit3 bound to: 4'b0101 
+	Parameter SPbit4 bound to: 4'b0110 
+	Parameter SPbit5 bound to: 4'b0111 
+	Parameter SPbit6 bound to: 4'b1000 
+	Parameter SPbit7 bound to: 4'b1001 
+	Parameter SPstop bound to: 4'b1010 
+	Parameter SPwait bound to: 4'b1011 
 	Parameter adcidle bound to: 5'b00000 
 	Parameter adcstart bound to: 5'b00001 
 	Parameter adcwait bound to: 5'b00010 
@@ -67,10 +97,10 @@ INFO: [Synth 8-6157] synthesizing module 'FlySongSRAM' [P:/STERN/96CH_RECORDER/9
 	Parameter po_wait bound to: 4'b0110 
 	Parameter po_start bound to: 4'b0111 
 	Parameter po_end bound to: 4'b1000 
-INFO: [Synth 8-155] case statement is not full and has no default [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:794]
-INFO: [Synth 8-155] case statement is not full and has no default [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:872]
-INFO: [Synth 8-155] case statement is not full and has no default [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1003]
-INFO: [Synth 8-6157] synthesizing module 'SPI' [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/SPI.v:12]
+INFO: [Synth 8-155] case statement is not full and has no default [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1104]
+INFO: [Synth 8-155] case statement is not full and has no default [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1182]
+INFO: [Synth 8-155] case statement is not full and has no default [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1313]
+INFO: [Synth 8-6157] synthesizing module 'SPI' [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/SPI.v:12]
 	Parameter idle bound to: 3'b000 
 	Parameter starthi bound to: 3'b001 
 	Parameter startlo bound to: 3'b010 
@@ -79,9 +109,9 @@ INFO: [Synth 8-6157] synthesizing module 'SPI' [P:/STERN/96CH_RECORDER/96chFlySo
 	Parameter stop bound to: 3'b101 
 	Parameter holdclk bound to: 3'b110 
 	Parameter extra_1 bound to: 3'b111 
-WARNING: [Synth 8-3848] Net tp in module/entity SPI does not have driver. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/SPI.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'SPI' (1#1) [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/SPI.v:12]
-INFO: [Synth 8-6157] synthesizing module 'TMP06' [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:13]
+WARNING: [Synth 8-3848] Net tp in module/entity SPI does not have driver. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/SPI.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'SPI' (1#1) [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/SPI.v:12]
+INFO: [Synth 8-6157] synthesizing module 'TMP06' [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:13]
 	Parameter idle bound to: 4'b0000 
 	Parameter cnvbeg bound to: 4'b0001 
 	Parameter waitcnv bound to: 4'b0010 
@@ -96,9 +126,9 @@ INFO: [Synth 8-6157] synthesizing module 'TMP06' [P:/STERN/96CH_RECORDER/96chFly
 	Parameter divbeg bound to: 4'b1011 
 	Parameter divwait bound to: 4'b1100 
 	Parameter endhi_old bound to: 4'b1101 
-INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1/.Xil/Vivado-19532-sawtelles-lw1/realtime/mult_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (2#1) [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1/.Xil/Vivado-19532-sawtelles-lw1/realtime/mult_gen_0_stub.v:6]
-INFO: [Synth 8-638] synthesizing module 'div_gen_0' [p:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:73]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/.Xil/Vivado-21304-sawtelles-lw2/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (2#1) [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/.Xil/Vivado-21304-sawtelles-lw2/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'div_gen_0' [z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:73]
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
 	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
@@ -123,13 +153,18 @@ INFO: [Synth 8-638] synthesizing module 'div_gen_0' [p:/STERN/96CH_RECORDER/96ch
 	Parameter C_S_AXIS_DIVIDEND_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 48 - type: integer 
 	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'div_gen_v5_1_11' declared at 'p:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/hdl/div_gen_v5_1_vh_rfs.vhd:13849' bound to instance 'U0' of component 'div_gen_v5_1_11' [p:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:142]
+INFO: [Synth 8-3491] module 'div_gen_v5_1_11' declared at 'z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/hdl/div_gen_v5_1_vh_rfs.vhd:13849' bound to instance 'U0' of component 'div_gen_v5_1_11' [z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:142]
 WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
-INFO: [Synth 8-256] done synthesizing module 'div_gen_0' (38#1) [p:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:73]
-WARNING: [Synth 8-6014] Unused sequential element div_wait_cnt_reg was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:310]
-WARNING: [Synth 8-3848] Net led in module/entity TMP06 does not have driver. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:16]
-INFO: [Synth 8-6155] done synthesizing module 'TMP06' (39#1) [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:13]
-INFO: [Synth 8-6157] synthesizing module 'okHost' [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/okLibrary.v:13]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_0' (38#1) [z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element overflow_reg was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:141]
+WARNING: [Synth 8-6014] Unused sequential element thrshld_reg was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:142]
+WARNING: [Synth 8-6014] Unused sequential element lowover_reg was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:143]
+WARNING: [Synth 8-6014] Unused sequential element glitch_reg was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:144]
+WARNING: [Synth 8-6014] Unused sequential element div_wait_cnt_reg was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:310]
+WARNING: [Synth 8-3848] Net led in module/entity TMP06 does not have driver. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:16]
+WARNING: [Synth 8-3848] Net tp in module/entity TMP06 does not have driver. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'TMP06' (39#1) [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:13]
+INFO: [Synth 8-6157] synthesizing module 'okHost' [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/okLibrary.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
@@ -179,7 +214,7 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2019.1/
 	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (43#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39933]
-WARNING: [Synth 8-7023] instance 'mmcm0' of module 'MMCME2_BASE' has 18 connections declared, but only 6 given [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/okLibrary.v:56]
+WARNING: [Synth 8-7023] instance 'mmcm0' of module 'MMCME2_BASE' has 18 connections declared, but only 6 given [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/okLibrary.v:56]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (44#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6157] synthesizing module 'OBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:45998]
@@ -266,7 +301,7 @@ INFO: [Synth 8-6157] synthesizing module 'VCC' [C:/Xilinx/Vivado/2019.1/scripts/
 INFO: [Synth 8-6155] done synthesizing module 'VCC' (52#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81391]
 INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1479]
 INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (53#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1479]
-INFO: [Synth 8-6157] synthesizing module 'fifo_generator_v12_0' [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/okCoreHarness.v:12227]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_v12_0' [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/okCoreHarness.v:12227]
 INFO: [Synth 8-6157] synthesizing module 'LUT3__parameterized1' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39080]
 INFO: [Synth 8-6155] done synthesizing module 'LUT3__parameterized1' (53#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39080]
 INFO: [Synth 8-6157] synthesizing module 'LUT2__parameterized1' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39042]
@@ -307,7 +342,7 @@ INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized3' [C:/Xilinx/Vivad
 INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized3' (57#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39122]
 INFO: [Synth 8-6157] synthesizing module 'LUT4__parameterized4' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39122]
 INFO: [Synth 8-6155] done synthesizing module 'LUT4__parameterized4' (57#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39122]
-INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_v12_0' (58#1) [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/okCoreHarness.v:12227]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_v12_0' (58#1) [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/okCoreHarness.v:12227]
 INFO: [Synth 8-6157] synthesizing module 'DNA_PORT' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:11928]
 INFO: [Synth 8-6155] done synthesizing module 'DNA_PORT' (60#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:11928]
 INFO: [Synth 8-6157] synthesizing module 'FDCE__parameterized0' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13448]
@@ -371,110 +406,106 @@ INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (63#1) [C:/Xilinx/Vivado/
 INFO: [Synth 8-6155] done synthesizing module 'LUT6_2__parameterized8' (63#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39264]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter N bound to: 6 - type: integer 
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1161]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1162]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1163]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1164]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1165]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[511] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[510] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[509] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[508] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[507] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[506] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[505] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[504] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[503] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[502] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[501] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[500] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[499] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[498] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[497] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[496] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[495] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[494] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[493] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[492] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[491] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[490] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[489] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[488] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[487] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[486] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[485] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[484] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[483] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[482] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[481] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[480] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[479] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[478] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[477] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[476] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[475] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[474] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[473] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[472] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[471] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[470] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[469] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[468] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[467] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[466] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[465] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[464] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[463] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[462] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[461] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[460] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[459] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[458] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[457] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[456] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[455] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[454] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[453] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[452] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[451] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[450] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[449] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[448] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[447] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[446] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[445] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[444] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[443] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[442] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[441] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[440] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[439] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[438] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[437] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[436] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[435] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[434] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[433] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[432] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[431] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[430] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[429] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[428] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[427] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[426] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[425] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[424] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[423] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[422] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[421] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[420] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[419] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[418] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[417] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[416] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[415] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[414] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
-WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[413] was removed.  [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:370]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1480]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1481]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1482]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1483]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1484]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[511] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[510] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[509] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[508] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[507] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[506] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[505] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[504] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[503] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[502] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[501] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[500] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[499] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[498] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[497] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[496] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[495] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[494] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[493] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[492] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[491] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[490] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[489] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[488] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[487] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[486] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[485] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[484] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[483] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[482] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[481] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[480] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[479] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[478] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[477] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[476] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[475] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[474] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[473] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[472] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[471] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[470] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[469] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[468] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[467] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[466] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[465] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[464] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[463] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[462] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[461] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[460] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[459] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[458] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[457] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[456] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[455] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[454] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[453] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[452] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[451] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[450] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[449] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[448] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[447] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[446] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[445] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[444] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[443] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[442] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[441] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[440] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[439] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[438] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[437] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[436] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[435] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[434] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[433] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[432] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[431] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[430] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[429] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[428] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[427] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[426] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[425] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[424] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[423] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[422] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[421] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[420] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[419] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[418] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
+WARNING: [Synth 8-6014] Unused sequential element LED0BrightFIFO_reg[417] was removed.  [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:397]
 INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-3917] design FlySongSRAM has port hi_muxsel driven by constant 0
 WARNING: [Synth 8-3331] design okBTPipeOut has unconnected port ok1[29]
@@ -579,7 +610,7 @@ WARNING: [Synth 8-3331] design fifo_generator_v12_0 has unconnected port s_axi_a
 WARNING: [Synth 8-3331] design fifo_generator_v12_0 has unconnected port s_axi_awaddr[29]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 898.270 ; gain = 365.605
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:35 . Memory (MB): peak = 1108.102 ; gain = 481.770
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -592,10 +623,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 898.270 ; gain = 365.605
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:46 . Memory (MB): peak = 1110.832 ; gain = 484.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 898.270 ; gain = 365.605
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:46 . Memory (MB): peak = 1110.832 ; gain = 484.500
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 194 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_in0_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
@@ -604,28 +635,28 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1/.Xil/Vivado-19532-sawtelles-lw1/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'temp/mul'
-Finished Parsing XDC File [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1/.Xil/Vivado-19532-sawtelles-lw1/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'temp/mul'
-Parsing XDC File [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc]
-WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
-WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
-WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
-WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
-WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
-WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
-WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
-WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'hi_in[0]' is not supported, ignoring it [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:62]
-WARNING: [Constraints 18-96] Setting input delay on a clock pin 'hi_in[0]' is not supported, ignoring it [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:63]
-Finished Parsing XDC File [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FlySongSRAM_propImpl.xdc].
+Parsing XDC File [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/.Xil/Vivado-21304-sawtelles-lw2/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'temp/mul'
+Finished Parsing XDC File [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/.Xil/Vivado-21304-sawtelles-lw2/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'temp/mul'
+Parsing XDC File [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:27]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'hi_in[0]' is not supported, ignoring it [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:62]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'hi_in[0]' is not supported, ignoring it [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc:63]
+Finished Parsing XDC File [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FlySongSRAM_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/FlySongSRAM_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/dont_touch.xdc]
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1020.988 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1252.016 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 86 instances were transformed.
   FDE => FDRE: 4 instances
@@ -637,17 +668,17 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
   RAMB16 => RAMB18E1: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 1020.988 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1252.016 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'temp/mul' at clock pin 'CLK' is different from the actual clock period '20.830', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1020.988 ; gain = 488.324
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:01:07 . Memory (MB): peak = 1252.016 ; gain = 625.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a15tftg256-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1020.988 ; gain = 488.324
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:01:07 . Memory (MB): peak = 1252.016 ; gain = 625.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -655,17 +686,23 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for temp/div. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for temp/mul. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 1020.988 ; gain = 488.324
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:01:07 . Memory (MB): peak = 1252.016 ; gain = 625.684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SPI'
 INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-3936] Found unconnected internal register 'd_dout_reg' and it is trimmed from '48' to '32' bits. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:72]
-WARNING: [Synth 8-3936] Found unconnected internal register 'tempvalues_reg' and it is trimmed from '96' to '88' bits. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:797]
+WARNING: [Synth 8-3936] Found unconnected internal register 'd_dout_reg' and it is trimmed from '48' to '32' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/TMP06.v:72]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tempvalues_reg' and it is trimmed from '96' to '88' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1107]
 INFO: [Synth 8-5546] ROM "wren" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "wrAdr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wren" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wrAdr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "SPdrive" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adcstate" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "command" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wrData" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'LEDstate_reg' in module 'FlySongSRAM'
 INFO: [Synth 8-802] inferred FSM for state register 'tempstate_reg' in module 'FlySongSRAM'
 INFO: [Synth 8-802] inferred FSM for state register 'po_state_reg' in module 'FlySongSRAM'
@@ -702,7 +739,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'LEDstate_reg' using encodi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'tempstate_reg' using encoding 'one-hot' in module 'FlySongSRAM'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 1020.988 ; gain = 488.324
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:01:35 . Memory (MB): peak = 1252.016 ; gain = 625.684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/DELAY_INVALID_OP' (delay__parameterized9) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/DELAY_DIVIDE_BY_ZERO'
 INFO: [Synth 8-223] decloning instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/DELAY_INVALID_OP' (delay__parameterized9) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/DELAY_OVERFLOW'
@@ -713,10 +750,14 @@ INFO: [Synth 8-223] decloning instance 'temp/div/U0/i_synth/i_nonzero_fract.i_sy
 INFO: [Synth 8-223] decloning instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized9) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |okHost__GC0       |           1|      1375|
+|2     |FlySongSRAM__GCB0 |           1|     34490|
+|3     |FlySongSRAM__GCB1 |           1|     10348|
+|4     |FlySongSRAM__GCB2 |           1|     45479|
++------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -742,202 +783,307 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3936] Found unconnected internal register 'tempvalues_reg' and it is trimmed from '88' to '80' bits. [P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:797]
-INFO: [Synth 8-5546] ROM "wrAdr" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3936] Found unconnected internal register 'tempvalues_reg' and it is trimmed from '88' to '80' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:1107]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[255]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[1]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[2]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[3]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[4]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[5]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[6]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[7]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[8]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[9]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[10]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[11]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[12]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[13]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[14]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[15]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[16]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[17]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[18]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[19]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[20]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[21]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[22]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[23]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[24]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[25]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[26]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[27]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[28]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[29]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[30]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[31]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[32]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[33]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[34]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[35]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[36]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[37]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[38]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[39]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[40]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[41]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[42]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[43]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[44]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[45]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[46]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[47]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[48]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[49]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[50]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[51]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[52]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[53]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[54]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[55]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[56]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[57]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[58]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[59]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[60]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[61]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[62]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[63]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[64]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[65]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[66]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[67]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[68]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[69]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[70]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[71]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[72]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[73]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[74]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[75]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[76]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[77]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[78]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[79]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[80]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[81]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[82]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[83]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[84]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[85]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[86]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[87]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[88]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[89]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[90]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[91]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[92]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[93]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[94]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[95]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+WARNING: [Synth 8-3936] Found unconnected internal register 'LED2BrightFIFO_reg[96]' and it is trimmed from '16' to '15' bits. [Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/imports/96mic/FlySongSRAM.v:399]
+INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5546] ROM "wren" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wrAdr" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 WARNING: [Synth 8-3917] design FlySongSRAM has port hi_muxsel driven by constant 0
 INFO: [Synth 8-5784] Optimized 0 bits of RAM "datafifo_reg" due to constant propagation. Old ram width 16 bits, new ram width 16 bits.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\okHI/core0 /core0/\a0/pc0/sync_sleep_flop )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\okHI/core0 /core0/\a0/pc0/sync_interrupt_flop )
-INFO: [Synth 8-3886] merging instance 'command_reg[0]' (FDE) to 'command_reg[3]'
-INFO: [Synth 8-3886] merging instance 'command_reg[1]' (FDE) to 'command_reg[3]'
-INFO: [Synth 8-3886] merging instance 'command_reg[2]' (FDE) to 'command_reg[7]'
-INFO: [Synth 8-3886] merging instance 'fifoout_reg_rep[7]' (FDRE) to 'fifoout_reg[7]'
-INFO: [Synth 8-3886] merging instance 'fifoout_reg_rep[6]' (FDRE) to 'fifoout_reg[6]'
-INFO: [Synth 8-3886] merging instance 'fifoout_reg_rep[5]' (FDRE) to 'fifoout_reg[5]'
-INFO: [Synth 8-3886] merging instance 'fifoout_reg_rep[4]' (FDRE) to 'fifoout_reg[4]'
-INFO: [Synth 8-3886] merging instance 'fifoout_reg_rep[3]' (FDRE) to 'fifoout_reg[3]'
-INFO: [Synth 8-3886] merging instance 'fifoout_reg_rep[2]' (FDRE) to 'fifoout_reg[2]'
-INFO: [Synth 8-3886] merging instance 'fifoout_reg_rep[1]' (FDRE) to 'fifoout_reg[1]'
-INFO: [Synth 8-3886] merging instance 'fifoout_reg_rep[0]' (FDRE) to 'fifoout_reg[0]'
-INFO: [Synth 8-3886] merging instance 'fifoout_reg_rep[8]' (FDRE) to 'fifoout_reg[8]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\command_reg[3] )
-INFO: [Synth 8-3886] merging instance 'LEDptr_reg_rep[5]' (FDRE) to 'LEDptr_reg[5]'
-INFO: [Synth 8-3886] merging instance 'LEDptr_reg_rep[4]' (FDRE) to 'LEDptr_reg[4]'
-INFO: [Synth 8-3886] merging instance 'LEDptr_reg_rep[3]' (FDRE) to 'LEDptr_reg[3]'
-INFO: [Synth 8-3886] merging instance 'LEDptr_reg_rep[2]' (FDRE) to 'LEDptr_reg[2]'
-INFO: [Synth 8-3886] merging instance 'LEDptr_reg_rep[1]' (FDRE) to 'LEDptr_reg[1]'
-INFO: [Synth 8-3886] merging instance 'LEDptr_reg_rep[0]' (FDRE) to 'LEDptr_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\maxBuffer_reg[31] )
-INFO: [Synth 8-3886] merging instance 'LEDptr_reg_rep[6]' (FDRE) to 'LEDptr_reg[6]'
-INFO: [Synth 8-3886] merging instance 'LEDptr_reg_rep[7]' (FDRE) to 'LEDptr_reg[7]'
-INFO: [Synth 8-3886] merging instance 'temp/testdatad_reg[60]' (FDE) to 'temp/testdatad_reg[45]'
-INFO: [Synth 8-3886] merging instance 'temp/testdatad_reg[44]' (FDE) to 'temp/testdatad_reg[61]'
-INFO: [Synth 8-3886] merging instance 'temp/testdatad_reg[61]' (FDE) to 'temp/testdatad_reg[62]'
-INFO: [Synth 8-3886] merging instance 'temp/testdatad_reg[62]' (FDE) to 'temp/testdatad_reg[46]'
-INFO: [Synth 8-3886] merging instance 'temp/testdatad_reg[46]' (FDE) to 'temp/testdatad_reg[63]'
-INFO: [Synth 8-3886] merging instance 'temp/testdatad_reg[63]' (FDE) to 'temp/testdatad_reg[47]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/\testdatad_reg[47] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\command_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\okHI/core0 /core0/l233aa7bee2c916d8fab1c72e4c9ae55d_reg)
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (adc1/\cmd_d_reg[0] )
-INFO: [Synth 8-3886] merging instance 'tempvalues_reg[60]' (FDE) to 'tempvalues_reg[45]'
-INFO: [Synth 8-3886] merging instance 'tempvalues_reg[44]' (FDE) to 'tempvalues_reg[46]'
-INFO: [Synth 8-3886] merging instance 'tempvalues_reg[61]' (FDE) to 'tempvalues_reg[46]'
-INFO: [Synth 8-3886] merging instance 'tempvalues_reg[62]' (FDE) to 'tempvalues_reg[46]'
-INFO: [Synth 8-3886] merging instance 'tempvalues_reg[46]' (FDE) to 'tempvalues_reg[47]'
-INFO: [Synth 8-3886] merging instance 'tempvalues_reg[63]' (FDE) to 'tempvalues_reg[47]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tempvalues_reg[47] )
-INFO: [Synth 8-3886] merging instance 'adc1/cmd_d_reg[0]' (FDE) to 'adc1/cmd_d_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (adc1/\cmd_d_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (okHIi_3/core0/core0/\a0/pc0/sync_sleep_flop )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (okHIi_3/core0/core0/\a0/pc0/sync_interrupt_flop )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (okHIi_3/core0/core0/l233aa7bee2c916d8fab1c72e4c9ae55d_reg)
 WARNING: [Synth 8-3332] Sequential element (a0/pc0/sync_interrupt_flop) is unused and will be removed from module okCore.
 WARNING: [Synth 8-3332] Sequential element (a0/pc0/sync_sleep_flop) is unused and will be removed from module okCore.
 WARNING: [Synth 8-3332] Sequential element (l233aa7bee2c916d8fab1c72e4c9ae55d_reg) is unused and will be removed from module okCore.
-WARNING: [Synth 8-3332] Sequential element (la85eaf42c58af45585f858cdefb86492_reg) is unused and will be removed from module okCore.
-WARNING: [Synth 8-3332] Sequential element (lff3d64fc8c56e1daea4118a6081cd348_reg) is unused and will be removed from module okCore.
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/EXP/EXP_MOD_DEL/i_pipe/opt_has_pipe.first_q_reg[4]' (FDE) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/EXP/EXP_MOD_DEL/i_pipe/opt_has_pipe.first_q_reg[5]'
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[0]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[11]'
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[1]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[12]'
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[2]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[13]'
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[3]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[14]'
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[4]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[16] )
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][11]'
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][1]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][12]'
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][2]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][13]'
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][3]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][14]'
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][4]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[10] )
-INFO: [Synth 8-3886] merging instance 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/NEW_CODE.ND_DEL.delay_line_reg[11]' (FD) to 'temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/NEW_CODE.ND_DEL.nd_d1_reg'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_flow_ctrl/nd_pipe_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[3].pipe_reg[3][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[4].pipe_reg[4][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[5].pipe_reg[5][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo22/\wirehold_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo22/\wirehold_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo22/\wirehold_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo20/\wirehold_reg[9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo20/\wirehold_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo20/\wirehold_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo22/\wirehold_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo20/\wirehold_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo22/\wirehold_reg[12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo20/\wirehold_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo22/\wirehold_reg[13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo20/\wirehold_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo22/\wirehold_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo21/\wirehold_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo24/\wirehold_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (wo22/\wirehold_reg[15] )
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[1]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[3]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[7]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[1]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[3]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[7]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[8]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[9]) is unused and will be removed from module okWireIn__1.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[0]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[1]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[2]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[3]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[4]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[5]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[6]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[7]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[0]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[1]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[2]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[3]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[4]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[5]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[6]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[7]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[8]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[9]) is unused and will be removed from module okWireIn__2.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[0]) is unused and will be removed from module okWireIn.
+INFO: [Synth 8-3886] merging instance 'i_0/command_reg[0]' (FDE) to 'i_0/command_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/command_reg[1]' (FDE) to 'i_0/command_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/command_reg[2]' (FDE) to 'i_0/command_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\command_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/\command_reg[7] )
+INFO: [Synth 8-3886] merging instance 'i_0/temp/testdatad_reg[60]' (FDE) to 'i_0/temp/testdatad_reg[45]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/testdatad_reg[44]' (FDE) to 'i_0/temp/testdatad_reg[61]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/testdatad_reg[61]' (FDE) to 'i_0/temp/testdatad_reg[62]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/testdatad_reg[62]' (FDE) to 'i_0/temp/testdatad_reg[46]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/testdatad_reg[46]' (FDE) to 'i_0/temp/testdatad_reg[63]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/testdatad_reg[63]' (FDE) to 'i_0/temp/testdatad_reg[47]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/\testdatad_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/adc1/\cmd_d_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_0/tempvalues_reg[60]' (FDE) to 'i_0/tempvalues_reg[45]'
+INFO: [Synth 8-3886] merging instance 'i_0/tempvalues_reg[44]' (FDE) to 'i_0/tempvalues_reg[46]'
+INFO: [Synth 8-3886] merging instance 'i_0/tempvalues_reg[61]' (FDE) to 'i_0/tempvalues_reg[46]'
+INFO: [Synth 8-3886] merging instance 'i_0/tempvalues_reg[62]' (FDE) to 'i_0/tempvalues_reg[46]'
+INFO: [Synth 8-3886] merging instance 'i_0/tempvalues_reg[46]' (FDE) to 'i_0/tempvalues_reg[47]'
+INFO: [Synth 8-3886] merging instance 'i_0/tempvalues_reg[63]' (FDE) to 'i_0/tempvalues_reg[47]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\tempvalues_reg[47] )
+INFO: [Synth 8-3886] merging instance 'i_0/adc1/cmd_d_reg[0]' (FDE) to 'i_0/adc1/cmd_d_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/adc1/\cmd_d_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/EXP/EXP_MOD_DEL/i_pipe/opt_has_pipe.first_q_reg[4]' (FDE) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/EXP/EXP_MOD_DEL/i_pipe/opt_has_pipe.first_q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[0]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[1]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[2]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[3]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[4]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.first_q_reg[16] )
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][11]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][1]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][12]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][2]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][13]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][3]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][14]'
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][4]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.first_q_reg[10] )
+INFO: [Synth 8-3886] merging instance 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/NEW_CODE.ND_DEL.delay_line_reg[11]' (FD) to 'i_0/temp/div/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/NEW_CODE.ND_DEL.nd_d1_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_flow_ctrl/nd_pipe_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/i_x_bypass/opt_has_pipe.i_pipe[2].pipe_reg[2][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[3].pipe_reg[3][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[4].pipe_reg[4][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/temp/div/U0/i_synth/\i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_denom_est_bypass/opt_has_pipe.i_pipe[5].pipe_reg[5][16] )
+INFO: [Synth 8-3886] merging instance 'i_1/fifoout_reg_rep[7]' (FDRE) to 'i_1/fifoout_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/fifoout_reg_rep[6]' (FDRE) to 'i_1/fifoout_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/fifoout_reg_rep[5]' (FDRE) to 'i_1/fifoout_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_1/fifoout_reg_rep[4]' (FDRE) to 'i_1/fifoout_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_1/fifoout_reg_rep[3]' (FDRE) to 'i_1/fifoout_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/fifoout_reg_rep[2]' (FDRE) to 'i_1/fifoout_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/fifoout_reg_rep[1]' (FDRE) to 'i_1/fifoout_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/fifoout_reg_rep[0]' (FDRE) to 'i_1/fifoout_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/fifoout_reg_rep[8]' (FDRE) to 'i_1/fifoout_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\maxBuffer_reg[31] )
+INFO: [Synth 8-3886] merging instance 'i_1/LEDptr_reg_rep[5]' (FDRE) to 'i_1/LEDptr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_1/LEDptr_reg_rep[4]' (FDRE) to 'i_1/LEDptr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_1/LEDptr_reg_rep[3]' (FDRE) to 'i_1/LEDptr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_1/LEDptr_reg_rep[2]' (FDRE) to 'i_1/LEDptr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_1/LEDptr_reg_rep[1]' (FDRE) to 'i_1/LEDptr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_1/LEDptr_reg_rep[0]' (FDRE) to 'i_1/LEDptr_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo22/\wirehold_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo22/\wirehold_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo22/\wirehold_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo22/\wirehold_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo20/\wirehold_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo20/\wirehold_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo20/\wirehold_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo22/\wirehold_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo20/\wirehold_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo22/\wirehold_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo20/\wirehold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo22/\wirehold_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo20/\wirehold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo22/\wirehold_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo21/\wirehold_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/wo22/\wirehold_reg[15] )
+INFO: [Synth 8-3886] merging instance 'i_1/LEDptr_reg_rep[6]' (FDRE) to 'i_1/LEDptr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_1/LEDptr_reg_rep[7]' (FDRE) to 'i_1/LEDptr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_1/LED2DAC_reg[0]' (FDRE) to 'i_1/LED0DAC_reg[0]'
+INFO: [Synth 8-3886] merging instance 'i_1/LED1DAC_reg[0]' (FDRE) to 'i_1/LED0DAC_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\LED0DAC_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[0]) is unused and will be removed from module okWireOut__1.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[11]) is unused and will be removed from module okWireOut__1.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[12]) is unused and will be removed from module okWireOut__1.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[13]) is unused and will be removed from module okWireOut__1.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[14]) is unused and will be removed from module okWireOut__1.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[15]) is unused and will be removed from module okWireOut__1.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[1]) is unused and will be removed from module okWireOut__1.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[2]) is unused and will be removed from module okWireOut__1.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[4]) is unused and will be removed from module okWireOut__1.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[0]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[10]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[11]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[12]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[13]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[14]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[15]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[4]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[6]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[9]) is unused and will be removed from module okWireOut__2.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[10]) is unused and will be removed from module okWireOut__3.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[11]) is unused and will be removed from module okWireOut__3.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[12]) is unused and will be removed from module okWireOut__3.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[13]) is unused and will be removed from module okWireOut__3.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[14]) is unused and will be removed from module okWireOut__3.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[9]) is unused and will be removed from module okWireOut__3.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[10]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[11]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[12]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[13]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[14]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[15]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[6]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[7]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[8]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (wirehold_reg[9]) is unused and will be removed from module okWireOut__4.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn__7.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn__7.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn__7.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn__7.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[0]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[1]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[2]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[3]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[4]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[5]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[6]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[7]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[0]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[1]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[2]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[3]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[4]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[5]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[6]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[7]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[8]) is unused and will be removed from module okWireIn__15.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[9]) is unused and will be removed from module okWireIn__15.
 WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[10]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[11]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[12]) is unused and will be removed from module okWireIn.
@@ -945,15 +1091,9 @@ WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[13]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[14]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[1]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[2]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[3]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[4]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[5]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[6]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[7]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[8]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[9]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[0]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[10]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[11]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[12]) is unused and will be removed from module okWireIn.
@@ -961,58 +1101,62 @@ WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[13]) is unused and wi
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[14]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[1]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[2]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[3]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[4]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[5]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[6]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[7]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[8]) is unused and will be removed from module okWireIn.
 WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[9]) is unused and will be removed from module okWireIn.
-WARNING: [Synth 8-3332] Sequential element (wirehold_reg[10]) is unused and will be removed from module okWireOut__2.
-WARNING: [Synth 8-3332] Sequential element (wirehold_reg[11]) is unused and will be removed from module okWireOut__2.
-WARNING: [Synth 8-3332] Sequential element (wirehold_reg[12]) is unused and will be removed from module okWireOut__2.
-WARNING: [Synth 8-3332] Sequential element (wirehold_reg[13]) is unused and will be removed from module okWireOut__2.
-WARNING: [Synth 8-3332] Sequential element (wirehold_reg[14]) is unused and will be removed from module okWireOut__2.
-WARNING: [Synth 8-3332] Sequential element (wirehold_reg[15]) is unused and will be removed from module okWireOut__2.
-WARNING: [Synth 8-3332] Sequential element (wirehold_reg[6]) is unused and will be removed from module okWireOut__2.
-WARNING: [Synth 8-3332] Sequential element (wirehold_reg[7]) is unused and will be removed from module okWireOut__2.
-WARNING: [Synth 8-3332] Sequential element (wirehold_reg[8]) is unused and will be removed from module okWireOut__2.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'i_2/serialBuffer_reg[0][7]' (FDRE) to 'i_2/serialBuffer_reg[0][5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\serialBuffer_reg[2][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\serialBuffer_reg[1][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\serialBuffer_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\serialBuffer_reg[0][4] )
+WARNING: [Synth 8-3332] Sequential element (ep_datahold_reg[15]) is unused and will be removed from module okWireIn__8.
+WARNING: [Synth 8-3332] Sequential element (ep_dataout_reg[15]) is unused and will be removed from module okWireIn__8.
+WARNING: [Synth 8-3332] Sequential element (la85eaf42c58af45585f858cdefb86492_reg) is unused and will be removed from module okCore.
+WARNING: [Synth 8-3332] Sequential element (lff3d64fc8c56e1daea4118a6081cd348_reg) is unused and will be removed from module okCore.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:24 . Memory (MB): peak = 1020.988 ; gain = 488.324
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:02:30 . Memory (MB): peak = 1252.016 ; gain = 625.684
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6837] The timing for the instance i_822/datafifo_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_1/i_2528/datafifo_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |okHost__GC0       |           1|      1350|
+|2     |FlySongSRAM__GCB0 |           1|     29558|
+|3     |FlySongSRAM__GCB1 |           1|      3333|
+|4     |FlySongSRAM__GCB2 |           1|      8533|
++------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:37 . Memory (MB): peak = 1020.988 ; gain = 488.324
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:02:39 . Memory (MB): peak = 1252.016 ; gain = 625.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:40 . Memory (MB): peak = 1020.988 ; gain = 488.324
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:02:41 . Memory (MB): peak = 1252.016 ; gain = 625.684
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |okHost__GC0       |           1|      1350|
+|2     |FlySongSRAM__GCB0 |           1|     29558|
+|3     |FlySongSRAM__GCB1 |           1|      3333|
+|4     |FlySongSRAM__GCB2 |           1|      8533|
++------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRDAC_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\IRDAC_reg[1] )
 INFO: [Synth 8-6837] The timing for the instance datafifo_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:47 . Memory (MB): peak = 1072.559 ; gain = 539.895
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1254.270 ; gain = 627.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1036,7 +1180,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:37 ; elapsed = 00:01:50 . Memory (MB): peak = 1074.879 ; gain = 542.215
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:02:51 . Memory (MB): peak = 1254.270 ; gain = 627.938
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1049,7 +1193,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:37 ; elapsed = 00:01:50 . Memory (MB): peak = 1074.879 ; gain = 542.215
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:02:51 . Memory (MB): peak = 1254.270 ; gain = 627.938
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1061,25 +1205,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1074.879 ; gain = 542.215
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:02:52 . Memory (MB): peak = 1254.270 ; gain = 627.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:51 . Memory (MB): peak = 1074.879 ; gain = 542.215
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:02:52 . Memory (MB): peak = 1254.270 ; gain = 627.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1074.879 ; gain = 542.215
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:02:53 . Memory (MB): peak = 1254.270 ; gain = 627.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1074.879 ; gain = 542.215
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:02:53 . Memory (MB): peak = 1254.270 ; gain = 627.938
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1098,22 +1242,22 @@ Report Cell Usage:
 +------+------------+------+
 |1     |mult_gen_0  |     1|
 |2     |BUFG        |     2|
-|3     |CARRY4      |   153|
+|3     |CARRY4      |   161|
 |4     |DNA_PORT    |     1|
 |5     |DSP48E1     |     1|
 |6     |DSP48E1_1   |     5|
 |7     |DSP48E1_2   |     6|
-|8     |LUT1        |   155|
-|9     |LUT2        |   250|
-|10    |LUT3        |   363|
-|11    |LUT4        |   426|
-|12    |LUT5        |   662|
-|13    |LUT6        |  3172|
+|8     |LUT1        |   162|
+|9     |LUT2        |   433|
+|10    |LUT3        |   763|
+|11    |LUT4        |   688|
+|12    |LUT5        |   782|
+|13    |LUT6        |  6184|
 |14    |LUT6_2      |    50|
 |15    |MMCME2_BASE |     1|
 |16    |MUXCY       |    37|
-|17    |MUXF7       |  1109|
-|18    |MUXF8       |   514|
+|17    |MUXF7       |  1642|
+|18    |MUXF8       |   801|
 |19    |RAM128X1S   |     8|
 |20    |RAM32M      |     4|
 |21    |RAM64M      |    20|
@@ -1128,27 +1272,28 @@ Report Cell Usage:
 |30    |FDCE        |   129|
 |31    |FDE         |     4|
 |32    |FDPE        |    44|
-|33    |FDRE        | 11334|
-|34    |FDSE        |    23|
+|33    |FDRE        | 15726|
+|34    |FDSE        |   277|
 |35    |IBUF        |    23|
 |36    |IBUFG       |     1|
 |37    |IOBUF       |    33|
-|38    |OBUF        |    58|
-|39    |OBUFT       |     2|
+|38    |OBUF        |    53|
+|39    |OBUFT       |     8|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1074.879 ; gain = 542.215
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:02:53 . Memory (MB): peak = 1254.270 ; gain = 627.938
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 297 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:45 . Memory (MB): peak = 1074.879 ; gain = 419.496
-Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1074.879 ; gain = 542.215
+Synthesis finished with 0 errors, 0 critical warnings and 358 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:02:45 . Memory (MB): peak = 1254.270 ; gain = 486.754
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:02:53 . Memory (MB): peak = 1254.270 ; gain = 627.938
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1986 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2814 Unisim elements for replacement
 WARNING: [Netlist 29-432] The IBUFG primitive 'okHI/hi_in0_bufg' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'FlySongSRAM' is not ideal for floorplanning, since the cellview 'FlySongSRAM' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1086.992 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1260.832 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 137 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 11 instances
@@ -1164,12 +1309,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAMB16 => RAMB18E1: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-384 Infos, 328 Warnings, 0 Critical Warnings and 0 Errors encountered.
+390 Infos, 425 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:02:02 . Memory (MB): peak = 1086.992 ; gain = 792.285
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1086.992 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:03:06 . Memory (MB): peak = 1260.832 ; gain = 875.625
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1260.832 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'P:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.runs/synth_1/FlySongSRAM.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/FlySongSRAM.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1260.832 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file FlySongSRAM_utilization_synth.rpt -pb FlySongSRAM_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 29 14:12:01 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun May 12 11:06:14 2024...

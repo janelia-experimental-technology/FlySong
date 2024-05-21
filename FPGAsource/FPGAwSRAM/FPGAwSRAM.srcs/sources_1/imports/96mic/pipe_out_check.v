@@ -59,7 +59,7 @@ assign cnvPin  = cnvrtsig;
 // 32-bit: x^32 + x^22 + x^2 + 1
 // lfsr_out_reg[0] <= r[31] ^ r[21] ^ r[1]
 //------------------------------------------------------------------------
-reg [31:0] temp;
+// reg [31:0] temp;
 always @(posedge clk) begin
 	if (reset == 1'b1) begin
 		throttle <= throttle_val;

@@ -29,6 +29,14 @@ using System.Runtime.InteropServices;
 //  ==== V E R S I O N =====
 // !!!! - change VERSION string -!!!!
 
+// 20240501 sws
+// - add 'initialize' bit for one time setups on FPGA - so this at setup and each time entering Save mode
+// - fix array idx error in parsing LED values
+
+// 20240424 sws
+// - add IR intensity setting
+// - turn off LED 1 and 2 at startup 
+
 // 20230118 sws
 // - save progressTB text top logfile each run
 
@@ -203,13 +211,14 @@ namespace cshrp_form
         reset = 0x04,
         adcEnable = 0x10,
         tempEnable = 0x20,
-        LEDEnable = 0x40
+        LEDEnable = 0x40,
+        initialize = 0x80
     }
 
 
     public partial class Form1 : Form
     {
-        string VERSION = "20230118";
+        string VERSION = "20240501";
         string FPGAVERSION = "00000000";
         string fpgaDrive = "c:\\FlySong\\";  //"Y:\\PROJECTS\\STERN\\96CH_RECORDER\\FPGA\\96mic\\96mic.runs\\impl_1\\"; //  "C:\\PROJECTS\\STERN\\96CH_RECORDER\\FPGA\\96mic\\96mic.runs\\impl_1\\"  ; 
         string ledDrive = "c:\\FlySong\\";
@@ -322,7 +331,7 @@ namespace cshrp_form
             //            dev.SetWireInValue(0x03, (UInt16)0); // LED off
             //            dev.UpdateWireIns();
 
-           // ret = dev.ReadFromBlockPipeOut(0xA0, 64, 40000, buffer);  // m_u32BlockSize,// u32SegmentSize, pBuffer);                                                                      //  	        } 
+           // ret = dev.ReadFromBlockPipeOut(0xA0, 64, 40000, buffer);  // m_u32BlockSize,// u32SegmentSize, pBuffer);     //  	 } 
             ret = dev.ReadFromBlockPipeOut(0xA0, 1024, 40960, buffer);
 
             for (int j = 0; j < 40; j++)
@@ -537,10 +546,13 @@ namespace cshrp_form
             // progressTB.AppendText(Environment.NewLine);
 
             //           dev.SetWireInValue(0x00,  1 << 2 | 1 );  //  RESET=1, turn on battery 
-            dev.SetWireInValue(0x00, (int)(Bit.reset | Bit.batEnable));  //  RESET=1, turn on battery 
+            dev.SetWireInValue(0x00, (int)(Bit.reset | Bit.batEnable | Bit.initialize ));  //  RESET=1, turn on battery , init things on FPGA
             dev.SetWireInValue(0x03, 0x00); // set LED off
             dev.SetWireInValue(0x04, 0x00); // set LEDS off
+            dev.SetWireInValue(0x0d, 0x00); // set LEDS off
+            dev.SetWireInValue(0x0e, 0x00); // set LEDS off
             dev.SetWireInValue(0x0c, CLOCKRATE / (1000 * (uint)syncRateUD.Value)); //(uint)syncRateUD.Value);
+            dev.SetWireInValue(0x0f, (uint)IRUD.Value * 10); // x10 like the LED values
             dev.UpdateWireIns();
 
             dev.UpdateWireOuts();
@@ -551,6 +563,9 @@ namespace cshrp_form
             progressTB.AppendText(Environment.NewLine);
 
             setBattery();  // check battery status and show
+
+            dev.SetWireInValue(0x0f, (uint)IRUD.Value * 10); // x10 like the LED values
+            dev.UpdateWireIns();
         }
 
         private void selectRigLB_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -885,9 +900,11 @@ namespace cshrp_form
         private void savedataRB_CheckedChanged(object sender, EventArgs e)
         {
             // since we were running real time, reset the FPGA
-            dev.SetWireInValue(0x00, 1 << 2 | 1);  //  RESET=1 , batt en
+            dev.SetWireInValue(0x00, (int)(Bit.reset | Bit.batEnable | Bit.initialize));  //  RESET=1, turn on battery , init things on FPGA  dev.SetWireInValue(0x00, 1 << 2 | 1);  //  RESET=1 , batt en
             dev.SetWireInValue(0x03, 0x00); // set LED off
             dev.SetWireInValue(0x04, 0x00); // set LEDS off
+            dev.UpdateWireIns();
+            dev.SetWireInValue(0x00, (int)(Bit.reset | Bit.batEnable ));  //  RESET=1, turn on battery , drop init things on FPGA
             dev.UpdateWireIns();
 
             timer1.Enabled = false;
@@ -994,8 +1011,10 @@ namespace cshrp_form
                         if (newStyle) // new! improved!
                         {
                             ledvalues = System.Text.RegularExpressions.Regex.Replace(ledline, @"\s{2,}", ","); // "[^.0-9]", ",");
-  //                          progressTB.AppendText(ledvalues+ Environment.NewLine);
+                            //ledvalues = System.Text.RegularExpressions.Regex.Replace(ledline, "[^.0-9]", ",");
+                            progressTB.AppendText(ledvalues+ Environment.NewLine);
                             string[] values = ledvalues.Split(charSeparators); //, StringSplitOptions.RemoveEmptyEntries);
+   //                         progressTB.AppendText(values + Environment.NewLine);
 
                             if (Single.TryParse(values[0], out ledtime[idx]))
                             {
@@ -1007,10 +1026,36 @@ namespace cshrp_form
                                 }    
                                 if (Single.TryParse(values[1], out led0bright[idx]))
                                 {
-                                    if (Single.TryParse(values[2], out led1bright[idx]))
+                                    if (values.Length > 2)  // more than one led value
                                     {
-  //                                      Single.TryParse(values[3], out led2bright[idx]);
-                                    }                                
+                                        if (Single.TryParse(values[2], out led1bright[idx]))
+                                        {
+                                            if (values.Length > 3) // all three?
+                                            {
+                                                if (Single.TryParse(values[3], out led2bright[idx]))
+                                                {
+                                                    ; // ok - all three are there
+                                                }
+                                                else
+                                                {
+                                                    led2bright[idx] = 0;  // if any missing, then set to 0
+                                                }
+                                            }
+                                        }
+                                        else
+                                        {
+                                            led1bright[idx] = 0;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        led1bright[idx] = 0;
+                                        led2bright[idx] = 0;
+                                    }
+                                }
+                                else
+                                {
+                                    led0bright[idx] = 0;
                                 }
                                 progressTB.AppendText(string.Format("vals: {0} {1} {2} {3}", ledtime[idx], led0bright[idx], led1bright[idx], led2bright[idx]));
                                 progressTB.AppendText(Environment.NewLine);
@@ -1126,6 +1171,7 @@ namespace cshrp_form
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             dev.SetWireInValue(0x00, 0 << 6 | 0 << 5 | 1 << 2 | 0);  // temp off, adc off, reset, bat off
+            dev.SetWireInValue(0x0f, 0); // turn off IR
             dev.UpdateWireIns();
         }
 
@@ -1698,6 +1744,19 @@ namespace cshrp_form
         private void wavnameL_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IRUD_ValueChanged(object sender, EventArgs e)
+        {
+            dev.SetWireInValue(0x0f, (uint)IRUD.Value*10); // x10 like the LED values
+            dev.UpdateWireIns();
+ //           string pstr = string.Format("IR {0}", ((uint)IRUD.Value)*10);
+ //           progressTB.AppendText(pstr);
         }
     }
 

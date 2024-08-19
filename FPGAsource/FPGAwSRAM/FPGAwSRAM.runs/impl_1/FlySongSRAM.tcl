@@ -66,17 +66,18 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 5
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a15tftg256-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.cache/wt} [current_project]
-  set_property parent.project_path {Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.xpr} [current_project]
+  set_property webtalk.parent_dir C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.cache/wt [current_project]
+  set_property parent.project_path C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.xpr [current_project]
   set_property ip_output_repo C:/PROJECTS/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM/FPGAwSRAM.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/synth_1/FlySongSRAM.dcp}}
-  read_ip -quiet {{Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/div_gen_0.xci}}
-  read_ip -quiet {{Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci}}
-  read_xdc {{Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc}}
+  add_files -quiet C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/FlySongSRAM.dcp
+  read_ip -quiet C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/div_gen_0/div_gen_0.xci
+  read_ip -quiet C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
+  read_xdc C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc
   link_design -top FlySongSRAM -part xc7a15tftg256-1
   close_msg_db -file init_design.pb
 } RESULT]

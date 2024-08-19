@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Aug 15 10:44:13 2024
+# Process ID: 14376
+# Current directory: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19748 C:\Users\sawtelles\Documents\GitHub\FlySong\FPGAsource\FPGAwSRAM\FPGAwSRAM.xpr
+# Log file: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/vivado.log
+# Journal file: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1

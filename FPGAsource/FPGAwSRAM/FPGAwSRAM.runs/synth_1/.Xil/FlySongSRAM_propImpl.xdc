@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc} rfile:../../../FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc rfile:../../../FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN K12 [get_ports {hi_muxsel}]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]

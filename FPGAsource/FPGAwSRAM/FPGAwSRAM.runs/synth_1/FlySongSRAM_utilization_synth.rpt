@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun May 12 11:06:13 2024
+| Date         : Mon Aug 19 11:23:14 2024
 | Host         : sawtelles-lw2 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file FlySongSRAM_utilization_synth.rpt -pb FlySongSRAM_utilization_synth.pb
 | Design       : FlySongSRAM
@@ -30,15 +30,15 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                |  8583 |     0 |     10400 | 82.53 |
-|   LUT as Logic             |  8321 |     0 |     10400 | 80.01 |
+| Slice LUTs*                |  6265 |     0 |     10400 | 60.24 |
+|   LUT as Logic             |  6003 |     0 |     10400 | 57.72 |
 |   LUT as Memory            |   262 |     0 |      9600 |  2.73 |
 |     LUT as Distributed RAM |   120 |     0 |           |       |
 |     LUT as Shift Register  |   142 |     0 |           |       |
-| Slice Registers            | 16180 |    48 |     20800 | 77.79 |
-|   Register as Flip Flop    | 16180 |    48 |     20800 | 77.79 |
+| Slice Registers            | 16139 |    48 |     20800 | 77.59 |
+|   Register as Flip Flop    | 16139 |    48 |     20800 | 77.59 |
 |   Register as Latch        |     0 |     0 |     20800 |  0.00 |
-| F7 Muxes                   |  1650 |     0 |     16300 | 10.12 |
+| F7 Muxes                   |  1626 |     0 |     16300 |  9.98 |
 | F8 Muxes                   |   801 |     0 |      8150 |  9.83 |
 +----------------------------+-------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 44    |          Yes |           - |          Set |
 | 129   |          Yes |           - |        Reset |
-| 277   |          Yes |         Set |            - |
-| 15730 |          Yes |       Reset |            - |
+| 24    |          Yes |         Set |            - |
+| 15942 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -150,25 +150,25 @@ Table of Contents
 +------------+-------+---------------------+
 |  Ref Name  |  Used | Functional Category |
 +------------+-------+---------------------+
-| FDRE       | 15730 |        Flop & Latch |
-| LUT6       |  6234 |                 LUT |
-| MUXF7      |  1650 |               MuxFx |
-| LUT5       |   832 |                 LUT |
+| FDRE       | 15942 |        Flop & Latch |
+| LUT6       |  4589 |                 LUT |
+| MUXF7      |  1626 |               MuxFx |
 | MUXF8      |   801 |               MuxFx |
-| LUT3       |   763 |                 LUT |
-| LUT4       |   688 |                 LUT |
-| LUT2       |   433 |                 LUT |
-| FDSE       |   277 |        Flop & Latch |
-| CARRY4     |   172 |          CarryLogic |
-| LUT1       |   162 |                 LUT |
+| LUT4       |   570 |                 LUT |
+| LUT5       |   413 |                 LUT |
+| LUT3       |   411 |                 LUT |
+| LUT2       |   305 |                 LUT |
+| CARRY4     |   175 |          CarryLogic |
+| LUT1       |   159 |                 LUT |
 | SRL16E     |   141 |  Distributed Memory |
 | FDCE       |   129 |        Flop & Latch |
 | RAMD64E    |    88 |  Distributed Memory |
+| OBUF       |    61 |                  IO |
 | IBUF       |    57 |                  IO |
-| OBUF       |    53 |                  IO |
 | FDPE       |    44 |        Flop & Latch |
-| OBUFT      |    41 |                  IO |
+| OBUFT      |    33 |                  IO |
 | RAMD32     |    24 |  Distributed Memory |
+| FDSE       |    24 |        Flop & Latch |
 | RAMS64E    |    16 |  Distributed Memory |
 | DSP48E1    |    12 |    Block Arithmetic |
 | RAMS32     |     8 |  Distributed Memory |

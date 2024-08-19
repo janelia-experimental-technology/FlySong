@@ -7,6 +7,11 @@
 // === VERSIONS === 
 // NOTE!! be sure to update VERSIONYEAR and VERSIONDATE to match version number
 
+// 20240819 sws
+// - problem with RGB serial circular buffer. I was using idx+1, idx+2, etc to fill consecutive buffer loactions, 
+//    but at wrap around it the idx+'x' would not properly wrap. Seems odd. Replace it with vcase statements so
+//    that only one buffer location gets filled each clock.
+
 // 20240430 sws
 // - add initilaize bit for one time setups 
 // - working, with green as well
@@ -197,7 +202,7 @@ module FlySongSRAM(
 	
 
 parameter YEAR = 16'd2024;    
-parameter DATE = 16'd0430;    	
+parameter DATE = 16'd0819;    	
 parameter FIFOLEN = 16'h8000;
 parameter LEDFIFOLEN = 16'd511;
 
@@ -647,7 +652,7 @@ localparam WAITTIME = 8'd20;
 reg initialized;
 
 reg [7:0] serialBuffer[63:0];  // 64 command buffer 
-reg [5:0] sbIdxIn;             
+reg [5:0] sbIdxIn;          
 reg [5:0] sbIdxOut;
 reg SPdrive;
 assign serialPin = SPdrive;
@@ -659,7 +664,7 @@ localparam SETCOLORQ0 = 	8'b10000000;  // 0x80
 localparam SETCOLORQ1 =     8'b10000100;
 localparam SETCOLORQ2 =     8'b10001000;
 localparam SETCOLORQ3 =     8'b10001100;
-localparam SETQUADSON =     8'b01001111;
+localparam SETQUADSON =     8'b01001111;  // 0x4f
 localparam BLU = 			8'b00000000;  // 0x00
 localparam GRN =			8'b00000001;  // 0x01
 localparam RED = 			8'b00000010;  // 0x02
@@ -670,6 +675,17 @@ localparam SETOFF = 		8'b00000000;  // 0x00
 localparam ALLON  = 		8'b11111111;  // 0xff 
 localparam ALLOFF = 		8'b11110000;  // 0xf0
 
+localparam RGBI1 = 0;
+localparam RGBI2 = 1;
+localparam RGBI3 = 2;
+localparam RGBI4 = 3; 
+localparam RGBI5 = 4;
+localparam RGBI6 = 5;
+
+reg [2:0] redState = RGBI1;
+reg [2:0] grnState = RGBI1;
+reg [2:0] bluState = RGBI1;
+reg [2:0] irState = RGBI1;
 
 // read in IR brightness 
 
@@ -680,16 +696,20 @@ begin
 end    
 
 
-always @(posedge ti_clk) 
+always @(negedge ti_clk) 
 begin
   if (initialize == 1'b1) 
   begin
-     sbIdxIn <= 6'd0;
+     sbIdxIn <= 6'd0;   	 
      initialized <= 1'b0;
      LED0DAClast <= 16'd0;
 	 LED1DAClast <= 16'd0;
 	 LED2DAClast <= 16'd0; 
 	 IRDAClast <= 16'd0;
+	 redState <= RGBI1;
+	 grnState <= RGBI1;
+	 bluState <= RGBI1;
+	 irState <= RGBI1;
   end 
   else
   begin 
@@ -698,68 +718,228 @@ begin
 	    serialBuffer[sbIdxIn] <= SETQUADSON;
 //	   serialBuffer[sbIdxIn+1] <= ENUMERATE;
 //	   serialBuffer[sbIdxIn+2] <= SETOFF;  
- 	    sbIdxIn <= sbIdxIn + 6'd1;
+        sbIdxIn <= sbIdxIn + 6'd1;      
 	    initialized <= 1'b1;   // flag that we have done this
       end
       else
 //    begin
 	  if( LED0DAC != LED0DAClast )
 	  begin
-        serialBuffer[sbIdxIn] <= INTENSITYHON | LED0DAC[11:8];  
-    	serialBuffer[sbIdxIn+1] <= INTENSITYMON | LED0DAC[7:4]; 
-        serialBuffer[sbIdxIn+2] <= INTENSITYLON | LED0DAC[3:0];   	    	  
-        serialBuffer[sbIdxIn+3] <= SETCOLORQ0 | RED;   
-        serialBuffer[sbIdxIn+4] <= SETQUADSON;   	
+	    case (redState)
+	      RGBI1:
+	      begin
+            serialBuffer[sbIdxIn] <= INTENSITYHON | LED0DAC[11:8];
+            sbIdxIn <= sbIdxIn + 6'd1;  
+            redState <= RGBI2;
+          end  
+          
+          RGBI2:
+          begin
+    	     serialBuffer[sbIdxIn] <= INTENSITYMON | LED0DAC[7:4];
+    	     sbIdxIn <= sbIdxIn + 6'd1;  
+    	     redState <= RGBI3;
+    	  end
+    	  
+    	  RGBI3:
+    	  begin    
+            serialBuffer[sbIdxIn] <= INTENSITYLON | LED0DAC[3:0];
+            sbIdxIn <= sbIdxIn + 6'd1;  
+            redState <= RGBI4;
+          end
+          
+          RGBI4:
+          begin     	    	  
+            serialBuffer[sbIdxIn] <= SETCOLORQ0 | RED;
+            sbIdxIn <= sbIdxIn + 6'd1;  
+            redState <= RGBI5;
+          end
+          
+          RGBI5:
+          begin     
+            serialBuffer[sbIdxIn] <= SETQUADSON;
+            sbIdxIn <= sbIdxIn + 6'd1;  
+            redState <= RGBI6;
+          end     	
 //        serialBuffer[sbIdxIn+4] <= SETCOLORQ1 | RED;  // 7x7 only has one DAC, would need these for 5x5
 //        serialBuffer[sbIdxIn+5] <= SETCOLORQ2 | RED; 
-//        serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | RED;      
-        serialBuffer[sbIdxIn+5] <= ALLON;
-	    sbIdxIn <= sbIdxIn + 6'd6;
-        LED0DAClast <= LED0DAC;  		
+//        serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | RED;
+
+          RGBI6:
+          begin      
+            serialBuffer[sbIdxIn] <= ALLON;
+            sbIdxIn <= sbIdxIn + 6'd1;    
+            LED0DAClast <= LED0DAC;
+            redState <= RGBI1;
+          end
+          
+          default:
+          begin
+            LED0DAClast <= LED0DAC;
+            redState <= RGBI1;
+          end 
+           
+        endcase  
+              		
       end 
       else 
       if( LED1DAC != LED1DAClast )
       begin
-        serialBuffer[sbIdxIn] <= INTENSITYHON | LED1DAC[11:8];
-  	    serialBuffer[sbIdxIn+1] <= INTENSITYMON | LED1DAC[7:4];
-	    serialBuffer[sbIdxIn+2] <= INTENSITYLON | LED1DAC[3:0];   	  
-        serialBuffer[sbIdxIn+3] <= SETCOLORQ0 | GRN;   	
-        serialBuffer[sbIdxIn+4] <= SETQUADSON;
+        case (grnState)
+           RGBI1:
+           begin
+             serialBuffer[sbIdxIn] <= INTENSITYHON | LED1DAC[11:8];
+             sbIdxIn <= sbIdxIn + 6'd1;
+             grnState <= RGBI2;
+           end 
+           
+           RGBI2:
+           begin
+  	         serialBuffer[sbIdxIn] <= INTENSITYMON | LED1DAC[7:4];
+             sbIdxIn <= sbIdxIn + 6'd1;
+             grnState <= RGBI3;
+           end
+           
+           RGBI3:
+           begin  	         
+	           serialBuffer[sbIdxIn] <= INTENSITYLON | LED1DAC[3:0];   	
+	           sbIdxIn <= sbIdxIn + 6'd1;
+               grnState <= RGBI4;
+           end
+           
+           RGBI4:
+           begin  
+               serialBuffer[sbIdxIn] <= SETCOLORQ0 | GRN;
+               sbIdxIn <= sbIdxIn + 6'd1;
+              grnState <= RGBI5;
+           end        	
+           
+           RGBI5:
+           begin
+               serialBuffer[sbIdxIn] <= SETQUADSON;
+               sbIdxIn <= sbIdxIn + 6'd1;
+               grnState <= RGBI6;
+           end 
 //        serialBuffer[sbIdxIn+4] <= SETCOLORQ1 | GRN;   
 //        serialBuffer[sbIdxIn+5] <= SETCOLORQ2 | GRN; 
-//        serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | GRN;  
-        serialBuffer[sbIdxIn+5] <= ALLON;
-	    sbIdxIn <= sbIdxIn + 6'd6;
-	    LED1DAClast <= LED1DAC;
+//        serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | GRN;
+
+            RGBI6:
+            begin
+                serialBuffer[sbIdxIn] <= ALLON;
+                sbIdxIn <= sbIdxIn + 6'd1;
+                LED1DAClast <= LED1DAC;
+                grnState <= RGBI1;
+           end 	
+           
+          default:
+          begin
+            LED1DAClast <= LED1DAC;
+            grnState <= RGBI1;
+          end   
+        endcase      
 	  end
 	  else
       if( LED2DAC != LED2DAClast )
       begin
-        serialBuffer[sbIdxIn] <= INTENSITYHON | LED2DAC[11:8];
-        serialBuffer[sbIdxIn+1] <= INTENSITYMON | LED2DAC[7:4];
-        serialBuffer[sbIdxIn+2] <= INTENSITYLON | LED2DAC[3:0];   	  
-        serialBuffer[sbIdxIn+3] <= SETCOLORQ0 | BLU; 
-        serialBuffer[sbIdxIn+4] <= SETQUADSON;  	
- //       serialBuffer[sbIdxIn+4] <= SETCOLORQ1 | BLU;   
- //       serialBuffer[sbIdxIn+5] <= SETCOLORQ2 | BLU; 
- //       serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | BLU; 	  
-        serialBuffer[sbIdxIn+5] <= ALLON;
-	    sbIdxIn <= sbIdxIn + 6'd6;
-        LED2DAClast <= LED2DAC;
+          case (bluState)
+           RGBI1:
+           begin
+             serialBuffer[sbIdxIn] <= INTENSITYHON | LED2DAC[11:8];
+             sbIdxIn <= sbIdxIn + 6'd1;
+             bluState <= RGBI2;
+           end 
+           
+           RGBI2:
+           begin
+  	         serialBuffer[sbIdxIn] <= INTENSITYMON | LED2DAC[7:4];
+             sbIdxIn <= sbIdxIn + 6'd1;
+             bluState <= RGBI3;
+           end
+           
+           RGBI3:
+           begin  	         
+	           serialBuffer[sbIdxIn] <= INTENSITYLON | LED2DAC[3:0];   	
+	           sbIdxIn <= sbIdxIn + 6'd1;
+               bluState <= RGBI4;
+           end
+           
+           RGBI4:
+           begin  
+              serialBuffer[sbIdxIn] <= SETCOLORQ0 | BLU;
+              sbIdxIn <= sbIdxIn + 6'd1;
+              bluState <= RGBI5;
+           end        	
+           
+           RGBI5:
+           begin
+               serialBuffer[sbIdxIn] <= SETQUADSON;
+               sbIdxIn <= sbIdxIn + 6'd1;
+               bluState <= RGBI6;
+           end 
+//        serialBuffer[sbIdxIn+4] <= SETCOLORQ1 | GRN;   
+//        serialBuffer[sbIdxIn+5] <= SETCOLORQ2 | GRN; 
+//        serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | GRN;
+
+            RGBI6:
+            begin
+                serialBuffer[sbIdxIn] <= ALLON;
+                sbIdxIn <= sbIdxIn + 6'd1;
+                LED2DAClast <= LED2DAC;
+                bluState <= RGBI1;
+           end 	 
+           
+          default:
+          begin
+            LED2DAClast <= LED2DAC;
+            bluState <= RGBI1;
+          end 
+        endcase       
+
       end  
 	  else
       if( IRDAC != IRDAClast )
       begin
-        serialBuffer[sbIdxIn] <= INTENSITYHON | IRDAC[11:8];
-        serialBuffer[sbIdxIn+1] <= INTENSITYMON | IRDAC[7:4];
-        serialBuffer[sbIdxIn+2] <= INTENSITYLON | IRDAC[3:0];   	  
-        serialBuffer[sbIdxIn+3] <= SETCOLORQ0 | IR;   	
+        case (irState)
+	      RGBI1:
+	      begin
+             serialBuffer[sbIdxIn] <= INTENSITYHON | IRDAC[11:8];
+             sbIdxIn <= sbIdxIn + 6'd1; 
+             irState <= RGBI2;
+          end
+          
+          RGBI2:
+          begin   
+            serialBuffer[sbIdxIn] <= INTENSITYMON | IRDAC[7:4];
+            sbIdxIn <= sbIdxIn + 6'd1; 
+            irState <= RGBI3;
+          end              
+          
+          RGBI3:
+          begin
+             serialBuffer[sbIdxIn] <= INTENSITYLON | IRDAC[3:0];
+             sbIdxIn <= sbIdxIn + 6'd1; 
+             irState <= RGBI4;             
+          end   	  
+          
+          RGBI4:
+          begin
+            serialBuffer[sbIdxIn] <= SETCOLORQ0 | IR;
+            sbIdxIn <= sbIdxIn + 6'd1;
+            IRDAClast <= IRDAC;
+            irState <= RGBI1;
+          end   	
+          
+          default:
+          begin
+            IRDAClast <= IRDAC;
+            irState <= RGBI1;
+          end 
+          
 //        serialBuffer[sbIdxIn+4] <= SETCOLORQ1 | IR;   
 //        serialBuffer[sbIdxIn+5] <= SETCOLORQ2 | IR; 
 //        serialBuffer[sbIdxIn+6] <= SETCOLORQ3 | IR; 	  
-//        serialBuffer[sbIdxIn+4] <= ALLON;
-	    sbIdxIn <= sbIdxIn + 6'd4;
-        IRDAClast <= IRDAC;
+//        serialBuffer[sbIdxIn+4] <= ALLON	            
+        endcase 
       end  // end ifelse for color check           
 //    end // 1st check   	
   end  // LED enable check	
@@ -869,7 +1049,7 @@ begin
 				
 				SPstop:
 				begin
-					SPdrive <= 1'b1;
+					SPdrive <= 1'b1;				
 					if( serialBuffer[sbIdxOut] == ENUMERATE )  // enumerate command needs time to propogate
 					begin
 						SPstate <= SPwait;
@@ -877,9 +1057,9 @@ begin
 					end
 					else
 					begin
-						SPstate <= SPstart;
-						sbIdxOut <= sbIdxOut + 6'd1;  // point to next byte
+						SPstate <= SPstart;						
 					end
+					sbIdxOut <= sbIdxOut + 6'd1;  // point to next byte
 				end	
 				
 				SPwait:
@@ -888,7 +1068,7 @@ begin
 				   if( SPwaitClock >= WAITTIME )
 				   begin
 				      	SPstate <= SPstart;
-						sbIdxOut <= sbIdxOut + 6'd1;  // point to next byte
+//						sbIdxOut <= sbIdxOut + 6'd1;  // point to next byte
 				   end
 				end
 				
@@ -1139,6 +1319,9 @@ begin
                             begin
                               wrData <=  tempvalues[15:0];
                               tempstate <= latchtemp;
+                            end   
+                         default:
+                            begin
                             end                    
                    endcase
                    wr <= 0;
@@ -1398,29 +1581,42 @@ begin
               po_ready <= 1'b0;     // drop ready line
               po_state <= po_idle;  // go back to idle state and wait for FIFO to build back   
          end // end senddata case 
+         
+      default:
+        begin
+          po_state <= po_idle;
+        end
+        
       endcase  // of po state
    end // reset test
 end  // data out
 
 
- assign led[6:0] = IRDAC[6:0]; //~LEDptr[3:0]; //adcstate[3:0];
- //assign led[4] = do_reset;
+ assign led[3:0] = sbIdxIn[3:0]; //~LEDptr[3:0]; //adcstate[3:0];
+ assign led[7:4] = sbIdxOut[3:0];
  //assign led[5] = LEDEnable;
 // assign led[6] = 1'b1;
 
 
 // assign tp[4:0] = portIn[4:0]; //adcstate[3:0];
-  assign tp[0] = SPstate[0];
-  assign tp[1] = SPstate[1];
-  assign tp[2] = SPstate[2];
-  assign tp[3] = SPstate[3];
-  assign tp[4] = sbIdxIn[0];
-  assign tp[5] = sbIdxOut[0];
-  assign tp[6] = SPclock[6];
-  assign tp[7] = SPdrive;
+ assign tp[5:0] = sbIdxIn[5:0];
+ assign tp[11:6] = sbIdxOut[5:0]; // serialBuffer[sbIdxOut];
+//assign tp[0] = SPdrive;
+//assign tp[1] = SPdrive;
+//assign tp[2] = SPdrive;
+//assign tp[3] = SPdrive;
+//assign tp[4] = SPdrive;
+//assign tp[5] = SPdrive;
+//assign tp[6] = SPdrive;
+//assign tp[7] = SPdrive;
+//assign tp[8] = SPdrive;
+//assign tp[9] = SPdrive;
+//assign tp[10] = SPdrive;
+//assign tp[11] = SPdrive;
+//assign tp[12] = SPdrive;
+//assign tp[13] = SPdrive;  
   
-
-                                  
+                               
 SPI   adc1     
 (
    .clk        (ti_clk),

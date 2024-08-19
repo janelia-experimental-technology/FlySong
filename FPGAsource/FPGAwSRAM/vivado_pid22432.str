@@ -1,0 +1,1145 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 22432
+License: Customer
+
+Current time: 	Mon Aug 19 07:54:27 EDT 2024
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 2560x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 23 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sawtelles
+User home directory: C:/Users/sawtelles
+User working directory: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/sawtelles/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/sawtelles/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/sawtelles/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/vivado.log
+Vivado journal file location: 	C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/vivado.jou
+Engine tmp dir: 	C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/.Xil/Vivado-22432-sawtelles-lw2
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+okFP_SDK: C:\Program Files\Opal Kelly\FrontPanelUSB\API
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 699 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 73 MB (+74427kb) [00:00:08]
+// [Engine Memory]: 636 MB (+515140kb) [00:00:08]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\sawtelles\Documents\GitHub\FlySong\FPGAsource\FPGAwSRAM\FPGAwSRAM.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 781 MB (+118592kb) [00:00:13]
+// [GUI Memory]: 103 MB (+27473kb) [00:00:13]
+// [GUI Memory]: 108 MB (+8kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  2039 ms.
+// Tcl Message: open_project C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 809 MB. GUI used memory: 56 MB. Current time: 8/19/24, 7:54:31 AM EDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 861.141 ; gain = 174.613 
+// [Engine Memory]: 830 MB (+10937kb) [00:00:15]
+// Project name: FPGAwSRAM; location: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM; part: xc7a15tftg256-1
+dismissDialog("Open Project"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 872 MB (+609kb) [00:00:17]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FlySongSRAM (FlySongSRAM.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, FlySongSRAM (FlySongSRAM.v)]", 1, true); // B (F, cl) - Node
+// Elapsed time: 44 seconds
+selectCodeEditor("FlySongSRAM.v", 78, 229); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("FlySongSRAM.v", 132, 226); // cl (w, cl)
+// Elapsed time: 15 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 54 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 116 MB (+2647kb) [00:03:18]
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Mon Aug 19 07:57:34 2024] Launched synth_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log [Mon Aug 19 07:57:35 2024] Launched impl_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // by (cl)
+// [Engine Memory]: 917 MB (+1007kb) [00:03:19]
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 917 MB. GUI used memory: 61 MB. Current time: 8/19/24, 7:57:39 AM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// [GUI Memory]: 124 MB (+1806kb) [00:21:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 917 MB. GUI used memory: 64 MB. Current time: 8/19/24, 8:27:42 AM EDT
+// Elapsed time: 1955 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2899 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210328BB1AD4A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,015 MB. GUI used memory: 69 MB. Current time: 8/19/24, 8:30:24 AM EDT
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 2,016 MB (+1104777kb) [00:36:07]
+dismissDialog("Auto Connect"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bC (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bC)
+// 'I' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bC (cl)
+// Elapsed time: 25 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,067 MB. GUI used memory: 66 MB. Current time: 8/19/24, 8:31:17 AM EDT
+// Elapsed time: 765 seconds
+selectCodeEditor("FlySongSRAM.v", 301, 276); // cl (w, cl)
+// Elapsed time: 84 seconds
+selectCodeEditor("FlySongSRAM.v", 3, 161); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 62 MB. Current time: 8/19/24, 8:45:33 AM EDT
+// [Engine Memory]: 2,128 MB (+11414kb) [00:51:41]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 63 MB. Current time: 8/19/24, 9:15:33 AM EDT
+// Elapsed time: 2789 seconds
+selectCodeEditor("FlySongSRAM.v", 149, 193); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("FlySongSRAM.v", 160, 215); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 11, 213, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 5, 228); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 5, 228, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 157, 226); // cl (w, cl)
+typeControlKey(null, null, 'z');
+selectCodeEditor("FlySongSRAM.v", 171, 231); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 163, 227); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 168, 231); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 33, 215, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 9, 246); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 9, 246, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 152, 263); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 4, 279, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// Elapsed time: 30 seconds
+selectCodeEditor("FlySongSRAM.v", 247, 131); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("FlySongSRAM.v", 258, 144); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("FlySongSRAM.v", 111, 353); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 311, 359); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 232, 349); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 285, 352); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 273, 351); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("FlySongSRAM.v", 112, 111); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("FlySongSRAM.v", 261, 198); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 25, 194, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 59, 220); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 59, 220, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 55, 214); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("FlySongSRAM.v", 54, 230, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 61, 228); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("FlySongSRAM.v", 267, 230); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 69, 232, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 56, 244); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 56, 244, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 50, 248); // cl (w, cl)
+// Elapsed time: 36 seconds
+selectCodeEditor("FlySongSRAM.v", 275, 296); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 64, 309); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 64, 309, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// Elapsed time: 14 seconds
+selectCodeEditor("FlySongSRAM.v", 39, 333, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 54, 332); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("FlySongSRAM.v", 275, 178); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 60, 113, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, cl)
+selectCodeEditor("FlySongSRAM.v", 243, 199); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 12, 206); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 12, 206, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 236, 211); // cl (w, cl)
+// Elapsed time: 22 seconds
+selectCodeEditor("FlySongSRAM.v", 287, 291); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 48, 233, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 273, 300); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 6, 316, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 44, 312); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 254, 246); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 2, 259); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 2, 259, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 242, 227); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 4, 245); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 4, 245, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 242, 245); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("FlySongSRAM.v", 158, 143); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 7, 160, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 29, 159); // cl (w, cl)
+// Elapsed time: 47 seconds
+selectCodeEditor("FlySongSRAM.v", 284, 293); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 243, 192); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 62, 194); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 52, 313); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 412, 194); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("FlySongSRAM.v", 253, 261); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 60, 266); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 40, 143); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 237, 160); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("FlySongSRAM.v", 239, 279); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("FlySongSRAM.v", 240, 228); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 238, 259); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 397, 317); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 194, 126); // cl (w, cl)
+// Elapsed time: 78 seconds
+selectCodeEditor("FlySongSRAM.v", 0, 215); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon Aug 19 09:42:05 2024] Launched synth_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log [Mon Aug 19 09:42:05 2024] Launched impl_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 65 MB. Current time: 8/19/24, 9:45:33 AM EDT
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 278 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// Elapsed time: 1388 seconds
+selectCodeEditor("FlySongSRAM.v", 1247, 188); // cl (w, cl)
+// Elapsed time: 43 seconds
+selectCodeEditor("FlySongSRAM.v", 245, 162); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 240, 167); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 159, 61); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 24, 56); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 154, 54); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 43, 60, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ah (an, cl)
+selectCodeEditor("FlySongSRAM.v", 39, 176); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 39, 176, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 28, 179); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("FlySongSRAM.v", 268, 298); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 250, 193); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 67, 195); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 239, 211); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("FlySongSRAM.v", 274, 223); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 245, 128); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 60, 129); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 54, 247); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("FlySongSRAM.v", 264, 296); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 249, 196); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 60, 196); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 58, 311); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("FlySongSRAM.v", 254, 363); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 263, 262); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 61, 264); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 240, 277); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 271, 312); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 237, 211); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 60, 212); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 238, 227); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("FlySongSRAM.v", 79, 93); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 143, 234); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 150, 225); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 40, 229); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 8, 111); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon Aug 19 10:13:58 2024] Launched synth_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log [Mon Aug 19 10:13:58 2024] Launched impl_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 63 MB. Current time: 8/19/24, 10:15:33 AM EDT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 490 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// Elapsed time: 254 seconds
+selectCodeEditor("FlySongSRAM.v", 77, 143); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("FlySongSRAM.v", 260, 210); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 112, 213); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 184, 270); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 37, 178); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 175, 261); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("FlySongSRAM.v", 91, 180); // cl (w, cl)
+// Elapsed time: 136 seconds
+selectCodeEditor("FlySongSRAM.v", 188, 364); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("FlySongSRAM.v", 263, 364); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 258, 369); // cl (w, cl)
+// Elapsed time: 30 seconds
+selectCodeEditor("FlySongSRAM.v", 252, 245); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 223, 228); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 226, 175); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 354, 181); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 279, 366); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 89, 365, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 84, 194); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 84, 194, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 392, 129); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 84, 145, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 223, 127); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 474, 123); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 82, 150, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 226, 127); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 485, 123); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 93, 143, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 232, 126); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 483, 175); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 80, 194, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// [GUI Memory]: 130 MB (+63kb) [02:37:16]
+// Elapsed time: 27 seconds
+selectCodeEditor("FlySongSRAM.v", 92, 329); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("FlySongSRAM.v", 193, 211); // cl (w, cl)
+// Elapsed time: 37 seconds
+selectCodeEditor("FlySongSRAM.v", 35, 161); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 145, 200, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 124, 216); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 68, 227, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 45, 238); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 46, 222); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("FlySongSRAM.v", 52, 127); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 476, 131); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 249, 403); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 74, 407); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 259, 143); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 290, 144); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("FlySongSRAM.v", 253, 159); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 108, 176); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 15, 151, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 1, 262); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 1, 262, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 71, 266); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("FlySongSRAM.v", 77, 377, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_DUPLICATE_SELECTION, "Duplicate Selection"); // ah (an, Popup.HeavyWeightWindow)
+typeControlKey(null, null, 'z');
+selectCodeEditor("FlySongSRAM.v", 90, 382, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// Elapsed time: 30 seconds
+selectCodeEditor("FlySongSRAM.v", 69, 299, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 83, 294); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("FlySongSRAM.v", 266, 283); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 263, 44); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 195, 214); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 61, 214); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 73, 59); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("FlySongSRAM.v", 1, 196); // cl (w, cl)
+// Elapsed time: 29 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 138 MB (+1348kb) [02:42:10]
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon Aug 19 10:36:36 2024] Launched synth_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log [Mon Aug 19 10:36:36 2024] Launched impl_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 390 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 70 MB. Current time: 8/19/24, 10:45:34 AM EDT
+// Elapsed time: 522 seconds
+selectCodeEditor("FlySongSRAM.v", 99, 71); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("FlySongSRAM.v", 502, 116); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 244, 431); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 64, 435); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 74, 123); // cl (w, cl)
+// Elapsed time: 44 seconds
+selectCodeEditor("FlySongSRAM.v", 521, 263); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 73, 284, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// HOptionPane Error: 'The paste failed. The clipboard content is not text. (Paste Error)'
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+selectCodeEditor("FlySongSRAM.v", 128, 199); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 30, 167, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 5, 277); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 6, 277, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 210, 181); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 221, 301); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 91, 279); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("FlySongSRAM.v", 506, 380); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 85, 398); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 85, 398, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 98, 394); // cl (w, cl)
+// Elapsed time: 40 seconds
+selectCodeEditor("FlySongSRAM.v", 76, 448); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 76, 448, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// Elapsed time: 20 seconds
+selectCodeEditor("FlySongSRAM.v", 3, 451, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// Elapsed time: 16 seconds
+selectCodeEditor("FlySongSRAM.v", 81, 445); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 78, 447); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("FlySongSRAM.v", 62, 443, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 226, 267); // cl (w, cl)
+// Elapsed time: 18 seconds
+selectCodeEditor("FlySongSRAM.v", 251, 414); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 302, 264); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 238, 351); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 64, 352); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 102, 279); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 232, 289); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 333, 328); // cl (w, cl)
+// Elapsed time: 23 seconds
+selectCodeEditor("FlySongSRAM.v", 113, 127); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 122, 62); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 123, 80); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 35, 48, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, cl)
+selectCodeEditor("FlySongSRAM.v", 11, 84); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 13, 83, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, cl)
+selectCodeEditor("FlySongSRAM.v", 389, 127); // cl (w, cl)
+// Elapsed time: 38 seconds
+selectCodeEditor("FlySongSRAM.v", 235, 382); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 87, 101, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ah (an, cl)
+selectCodeEditor("FlySongSRAM.v", 160, 261); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 546, 288); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 135, 263); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("FlySongSRAM.v", 338, 357); // cl (w, cl)
+// Elapsed time: 34 seconds
+selectCodeEditor("FlySongSRAM.v", 226, 227); // cl (w, cl)
+// Elapsed time: 27 seconds
+selectCodeEditor("FlySongSRAM.v", 158, 284); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 27, 216, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_CUT, "Cut"); // ah (an, Popup.HeavyWeightWindow)
+// WARNING: HEventQueue.dispatchEvent() is taking  1084 ms.
+// Elapsed time: 20 seconds
+selectCodeEditor("FlySongSRAM.v", 15, 97); // cl (w, cl)
+// Elapsed time: 54 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon Aug 19 11:01:04 2024] Launched synth_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log [Mon Aug 19 11:01:04 2024] Launched impl_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 139 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_REPLACE_IN_FILES, "Replace in Files..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_REPLACE_IN_FILES
+// Replace in Files: addNotify
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red1", -1); // JComboBox (t, s)
+// TclEventType: RUN_STEP_COMPLETED
+selectComboBox("pa.FindAndReplaceAllDialog_REPLACE_COMBO_BOX", "RGBI1", -1); // JComboBox (t, s)
+selectCheckBox((HResource) null, "Match case", true); // JCheckBox (t, s): TRUE
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // x (s)
+// by (cl):  Find in Files : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 72 MB. Current time: 8/19/24, 11:03:42 AM EDT
+// 'e' command handler elapsed time: 14 seconds
+dismissDialog("Find in Files"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 88 MB. Current time: 8/19/24, 11:03:42 AM EDT
+// Elapsed time: 10 seconds
+selectButton(PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, "Replace All"); // a (P, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1133 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_REPLACE_IN_FILES, "Replace in Files..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_REPLACE_IN_FILES
+// Replace in Files: addNotify
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red2", -1); // JComboBox (t, s)
+// TclEventType: RUN_STEP_COMPLETED
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red2", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_REPLACE_COMBO_BOX", "RGBI1", -1); // JComboBox (t, s)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // x (s)
+// k (cl): Text Changed: addNotify
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// by (cl):  Find in Files : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cl)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 72 MB. Current time: 8/19/24, 11:04:10 AM EDT
+// 'e' command handler elapsed time: 13 seconds
+dismissDialog("Find in Files"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 72 MB. Current time: 8/19/24, 11:04:11 AM EDT
+selectButton(PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, "Replace All"); // a (P, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_FIND_IN_FILES, "Find in Files..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_FIND_IN_FILES
+// Find in Files: addNotify
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_CLOSE, "Close"); // z (s)
+// 'f' command handler elapsed time: 4 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_REPLACE_IN_FILES, "Replace in Files..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_REPLACE_IN_FILES
+// Replace in Files: addNotify
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red1", 1); // JComboBox (t, s)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_CLOSE, "Close"); // z (s)
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red3", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red3", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_REPLACE_COMBO_BOX", "RGBI2", -1); // JComboBox (t, s)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // x (s)
+// by (cl):  Find in Files : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 75 MB. Current time: 8/19/24, 11:04:43 AM EDT
+// 'e' command handler elapsed time: 15 seconds
+dismissDialog("Find in Files"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 75 MB. Current time: 8/19/24, 11:04:44 AM EDT
+// TclEventType: RUN_STEP_COMPLETED
+selectButton(PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, "Replace All"); // a (P, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1142 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_REPLACE_IN_FILES, "Replace in Files..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_REPLACE_IN_FILES
+// Replace in Files: addNotify
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red4", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red4", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_REPLACE_COMBO_BOX", "RGBI3", -1); // JComboBox (t, s)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // x (s)
+// k (cl): Text Changed: addNotify
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// by (cl):  Find in Files : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cl)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 76 MB. Current time: 8/19/24, 11:05:00 AM EDT
+// 'e' command handler elapsed time: 9 seconds
+dismissDialog("Find in Files"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 87 MB. Current time: 8/19/24, 11:05:01 AM EDT
+// ah (cl): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectButton(PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, "Replace All"); // a (P, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_REPLACE_IN_FILES, "Replace in Files..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_REPLACE_IN_FILES
+// Replace in Files: addNotify
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red5", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red5", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_REPLACE_COMBO_BOX", "RGBI4", -1); // JComboBox (t, s)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // x (s)
+// k (cl): Text Changed: addNotify
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// by (cl):  Find in Files : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cl)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 78 MB. Current time: 8/19/24, 11:05:26 AM EDT
+// 'e' command handler elapsed time: 15 seconds
+dismissDialog("Find in Files"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 78 MB. Current time: 8/19/24, 11:05:26 AM EDT
+selectButton(PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, "Replace All"); // a (P, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1155 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_REPLACE_IN_FILES, "Replace in Files..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_REPLACE_IN_FILES
+// Replace in Files: addNotify
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red6", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "red6", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_REPLACE_COMBO_BOX", "RGBI5", -1); // JComboBox (t, s)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // x (s)
+// k (cl): Text Changed: addNotify
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// by (cl):  Find in Files : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cl)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 79 MB. Current time: 8/19/24, 11:05:43 AM EDT
+// 'e' command handler elapsed time: 9 seconds
+dismissDialog("Find in Files"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 80 MB. Current time: 8/19/24, 11:05:43 AM EDT
+selectButton(PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, "Replace All"); // a (P, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_REPLACE_IN_FILES, "Replace in Files..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_REPLACE_IN_FILES
+// Replace in Files: addNotify
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "redState", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "redState", -1); // JComboBox (t, s)
+selectComboBox("pa.FindAndReplaceAllDialog_REPLACE_COMBO_BOX", "RGBI6", -1); // JComboBox (t, s)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // x (s)
+// k (cl): Text Changed: addNotify
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// by (cl):  Find in Files : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cl)
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 81 MB. Current time: 8/19/24, 11:06:06 AM EDT
+// 'e' command handler elapsed time: 14 seconds
+dismissDialog("Find in Files"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 93 MB. Current time: 8/19/24, 11:06:06 AM EDT
+// Elapsed time: 12 seconds
+selectButton(PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, "Replace All"); // a (P, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1158 ms.
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 106 seconds
+selectCodeEditor("FlySongSRAM.v", 64, 161); // cl (w, cl)
+// Elapsed time: 91 seconds
+selectCodeEditor("FlySongSRAM.v", 796, 178); // cl (w, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1431 ms.
+// Elapsed time: 49 seconds
+selectCodeEditor("FlySongSRAM.v", 247, 210); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 489, 220); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("FlySongSRAM.v", 174, 106); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 303, 147); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 152 MB (+7622kb) [03:16:29]
+// Elapsed time: 180 seconds
+selectCodeEditor("FlySongSRAM.v", 71, 282); // cl (w, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1123 ms.
+selectCodeEditor("FlySongSRAM.v", 157, 281); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 10, 283, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 7, 299); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 7, 299, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// WARNING: HEventQueue.dispatchEvent() is taking  1099 ms.
+selectCodeEditor("FlySongSRAM.v", 6, 312, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectCodeEditor("FlySongSRAM.v", 51, 322, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 11, 332); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 11, 331, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// WARNING: HEventQueue.dispatchEvent() is taking  1099 ms.
+// Elapsed time: 23 seconds
+selectCodeEditor("FlySongSRAM.v", 37, 280); // cl (w, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1083 ms.
+selectCodeEditor("FlySongSRAM.v", 179, 276); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 41, 277, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 52, 304); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 52, 304, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 43, 313); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 43, 313, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 174, 316); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 174, 315, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 162, 313); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("FlySongSRAM.v", 96, 297); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("FlySongSRAM.v", 139, 108); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 90, 110, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, cl)
+selectCodeEditor("FlySongSRAM.v", 152, 232); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 90, 231, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 145, 352); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 89, 348, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 145, 315); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 87, 315, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 145, 285); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 85, 279, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 144, 267); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 86, 263, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+// Elapsed time: 11 seconds
+selectCodeEditor("FlySongSRAM.v", 124, 192); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 152, 193); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 106, 199, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 154, 281); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 91, 277, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 153, 399); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 106, 397, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 164, 266); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 105, 264, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 159, 229); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 125, 230, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 167, 347); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 106, 346, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 172, 281); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 115, 280, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 174, 297); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 114, 297, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 131, 297); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 166, 301); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 127, 296, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 152, 234); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 93, 228, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 154, 348); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 93, 347, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 167, 270); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 122, 263, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 162, 382); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 101, 381, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 164, 246); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 106, 246, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 172, 282); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 115, 281, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 159, 159); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 98, 163, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 119, 163); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 146, 161); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 107, 162, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 151, 249); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 95, 247, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 148, 369); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 101, 364, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 155, 285); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 99, 280, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 145, 218); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 101, 210, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 339, 241); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 162, 255); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("FlySongSRAM.v", 126, 211); // cl (w, cl)
+// Elapsed time: 39 seconds
+selectCodeEditor("FlySongSRAM.v", 138, 93); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("FlySongSRAM.v", 113, 282); // cl (w, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1029 ms.
+selectCodeEditor("FlySongSRAM.v", 218, 261); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 108, 259, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 102, 332); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 103, 333, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 141, 309); // cl (w, cl)
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// Elapsed time: 12 seconds
+selectCodeEditor("FlySongSRAM.v", 218, 368); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 99, 383); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 101, 383); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 63, 312, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 112, 266); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 69, 290); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 69, 290, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 82, 297); // cl (w, cl)
+// Elapsed time: 32 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 17 seconds
+selectCodeEditor("FlySongSRAM.v", 120, 296); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 78, 328, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 67, 329); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("FlySongSRAM.v", 146, 284); // cl (w, cl)
+selectCodeEditor("FlySongSRAM.v", 85, 311, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ah (an, Popup.HeavyWeightWindow)
+selectCodeEditor("FlySongSRAM.v", 57, 307); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectCodeEditor("FlySongSRAM.v", 440, 241); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RUN_LAUNCH
+// [GUI Memory]: 162 MB (+1785kb) [03:27:23]
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 10 
+// Tcl Message: [Mon Aug 19 11:21:40 2024] Launched synth_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log [Mon Aug 19 11:21:40 2024] Launched impl_1... Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 527 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 85 MB. Current time: 8/19/24, 11:36:10 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 81 MB. Current time: 8/19/24, 12:06:10 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 80 MB. Current time: 8/19/24, 12:36:10 PM EDT
+// Elapsed time: 4663 seconds
+selectCodeEditor("FlySongSRAM.v", 393, 175); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,128 MB. GUI used memory: 81 MB. Current time: 8/19/24, 1:06:12 PM EDT

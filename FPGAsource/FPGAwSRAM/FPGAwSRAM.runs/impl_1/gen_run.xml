@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a15tftg256-1" LaunchTime="1715526163">
+<GenRun Id="impl_1" LaunchPart="xc7a15tftg256-1" LaunchTime="1724080900">
   <File Type="BITSTR-BMM" Name="FlySongSRAM_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="FlySongSRAM_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="FlySongSRAM_timing_summary_init.rpt"/>

@@ -32,7 +32,7 @@ reg  [3:0]  state;
 reg  [23:0] hicnts;
 reg  [23:0] locnts;
 reg  [23:0] savehicnts;
-reg   [9:0] cnvrtcnts;
+reg   [12:0] cnvrtcnts;
 
 reg startcnv;
 reg cnvrtsig;
@@ -147,7 +147,7 @@ always @(posedge clk) begin
            begin
               state <= delay;    // we will delay a bit when starting new round 
               hicnts <= 24'd0;    // reset temperature counters   
-              cnvrtcnts <= 10'd0; // counter to set conversion time              
+              cnvrtcnts <= 13'd0; // counter to set conversion time              
               first <= 1'b1;                          
            end               
            else
@@ -161,9 +161,9 @@ always @(posedge clk) begin
       delay: // wait 100 usecs before starting a round, to be sure last round is done 
          begin
            cnvrtcnts <= cnvrtcnts + 1;   // count up conversion start timer
-           if( cnvrtcnts >= 10'd4800 )   // 100 usces
+           if( cnvrtcnts >= 13'd4800 )   // 100 usces
            begin
-              cnvrtcnts <= 10'd0;        // reuse counter to time start pulse 
+              cnvrtcnts <= 13'd0;        // reuse counter to time start pulse 
               cnvrtsig <= 1'b1;   // set conversion pin high               
               state <=  cnvbeg;                    
            end
@@ -172,7 +172,7 @@ always @(posedge clk) begin
       cnvbeg:    // convert pin output
          begin
            cnvrtcnts <= cnvrtcnts + 1;     // count up conversion start timer
-           if( cnvrtcnts >= 10'd480 )   // need convrt pin high >10 nsec && < 25 uS  - use ~10 usecs
+           if( cnvrtcnts >= 13'd480 )   // need convrt pin high >10 nsec && < 25 uS  - use ~10 usecs
            begin
               cnvrtsig <= 1'b0;      // when done, set cnvrt pin low 
               state <=  timehi;      

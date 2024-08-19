@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Sun May 12 11:09:27 2024
+| Date             : Mon Aug 19 11:25:09 2024
 | Host             : sawtelles-lw2 running 64-bit major release  (build 9200)
 | Command          : report_power -file FlySongSRAM_power_routed.rpt -pb FlySongSRAM_power_summary_routed.pb -rpx FlySongSRAM_power_routed.rpx
 | Design           : FlySongSRAM
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.224        |
+| Total On-Chip Power (W)  | 0.218        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.152        |
+| Dynamic (W)              | 0.146        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 4.9          |
 | Max Ambient (C)          | 83.9         |
@@ -52,21 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.014 |        5 |       --- |             --- |
-| Slice Logic              |     0.011 |    26042 |       --- |             --- |
-|   LUT as Logic           |     0.010 |     7797 |     10400 |           74.97 |
-|   Register               |    <0.001 |    14843 |     20800 |           71.36 |
-|   CARRY4                 |    <0.001 |      133 |      8150 |            1.63 |
+| Clocks                   |     0.012 |        5 |       --- |             --- |
+| Slice Logic              |     0.007 |    23311 |       --- |             --- |
+|   LUT as Logic           |     0.006 |     5487 |     10400 |           52.76 |
+|   F7/F8 Muxes            |    <0.001 |     2421 |     32600 |            7.43 |
+|   Register               |    <0.001 |    14796 |     20800 |           71.13 |
+|   CARRY4                 |    <0.001 |      136 |      8150 |            1.67 |
 |   LUT as Distributed RAM |    <0.001 |      120 |      9600 |            1.25 |
-|   F7/F8 Muxes            |    <0.001 |     2445 |     32600 |            7.50 |
 |   LUT as Shift Register  |    <0.001 |        4 |      9600 |            0.04 |
 |   Others                 |     0.000 |       27 |       --- |             --- |
-| Signals                  |     0.014 |    19912 |       --- |             --- |
+| Signals                  |     0.007 |    17775 |       --- |             --- |
 | Block RAM                |    <0.001 |      1.5 |        25 |            6.00 |
 | MMCM                     |     0.103 |        1 |         5 |           20.00 |
-| I/O                      |     0.010 |      118 |       170 |           69.41 |
+| I/O                      |     0.016 |      118 |       170 |           69.41 |
 | Static Power             |     0.072 |          |           |                 |
-| Total                    |     0.224 |          |           |                 |
+| Total                    |     0.218 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,9 +76,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.049 |       0.039 |      0.010 |
-| Vccaux    |       1.800 |     0.070 |       0.057 |      0.013 |
-| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vccint    |       1.000 |     0.037 |       0.027 |      0.010 |
+| Vccaux    |       1.800 |     0.070 |       0.058 |      0.013 |
+| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -147,7 +147,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| FlySongSRAM |     0.152 |
+| FlySongSRAM |     0.146 |
 |   okHI      |     0.115 |
 |     core0   |     0.005 |
 |       core0 |     0.005 |

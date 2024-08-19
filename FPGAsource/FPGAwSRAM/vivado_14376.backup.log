@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Aug 15 10:44:13 2024
+# Process ID: 14376
+# Current directory: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19748 C:\Users\sawtelles\Documents\GitHub\FlySong\FPGAsource\FPGAwSRAM\FPGAwSRAM.xpr
+# Log file: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/vivado.log
+# Journal file: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.xpr
+INFO: [Project 1-313] Project file moved from 'Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 865.219 ; gain = 219.328
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Aug 15 11:04:54 2024] Launched synth_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Thu Aug 15 11:04:54 2024] Launched impl_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Aug 15 11:32:12 2024] Launched synth_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Thu Aug 15 11:32:12 2024] Launched impl_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Aug 15 11:32:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Thu Aug 15 11:32:46 2024] Launched impl_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Aug 15 12:51:04 2024] Launched synth_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Thu Aug 15 12:51:04 2024] Launched impl_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Aug 15 13:06:31 2024] Launched synth_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Thu Aug 15 13:06:31 2024] Launched impl_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Aug 15 13:46:54 2024] Launched synth_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Thu Aug 15 13:46:54 2024] Launched impl_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Aug 15 14:09:19 2024] Launched synth_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Thu Aug 15 14:09:19 2024] Launched impl_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Aug 15 14:18:00 2024] Launched synth_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Thu Aug 15 14:18:00 2024] Launched impl_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Thu Aug 15 15:19:13 2024] Launched synth_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/synth_1/runme.log
+[Thu Aug 15 15:19:13 2024] Launched impl_1...
+Run output will be captured here: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 15 15:52:29 2024...

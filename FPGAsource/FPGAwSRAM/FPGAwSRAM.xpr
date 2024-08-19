@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.xpr">
+<Project Version="7" Minor="40" Path="C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="cac012e5047a4cbc9f132ffdecdeaa17"/>

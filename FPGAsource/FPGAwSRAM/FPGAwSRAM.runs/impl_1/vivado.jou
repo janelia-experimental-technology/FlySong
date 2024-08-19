@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun May 12 11:06:21 2024
-# Process ID: 18240
-# Current directory: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/impl_1
+# Start of session at: Mon Aug 19 11:23:22 2024
+# Process ID: 19712
+# Current directory: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1
 # Command line: vivado.exe -log FlySongSRAM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FlySongSRAM.tcl -notrace
-# Log file: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/impl_1/FlySongSRAM.vdi
-# Journal file: Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.runs/impl_1\vivado.jou
+# Log file: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1/FlySongSRAM.vdi
+# Journal file: C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source FlySongSRAM.tcl -notrace

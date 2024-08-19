@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun May 12 11:09:20 2024
+| Date         : Mon Aug 19 11:25:06 2024
 | Host         : sawtelles-lw2 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file FlySongSRAM_methodology_drc_routed.rpt -pb FlySongSRAM_methodology_drc_routed.pb -rpx FlySongSRAM_methodology_drc_routed.rpx
 | Design       : FlySongSRAM
@@ -435,140 +435,140 @@ XDCH-1#1 Warning
 Hold option missing in multicycle path constraint  
 A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
 set_multicycle_path -setup -from [get_ports {hi_in[*]}] 2
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 64)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 64)
 Related violations: <none>
 
 XDCH-1#2 Warning
 Hold option missing in multicycle path constraint  
 A multicycle constraint has been set to override the setup relationship, but no multicycle constraint has been defined to change the hold relationship. As a result, the default hold for those paths is derived from the setup and may not be evaluated as expected.
 set_multicycle_path -setup -from [get_ports {hi_inout[*]}] 2
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 60)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 60)
 Related violations: <none>
 
 XDCH-2#1 Warning
 Same min and max delay values on IO port  
 The same output delay of 8.900 ns has been defined on port 'hi_out[0]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 8.900 [get_ports {hi_out[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 66)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 66)
 Related violations: <none>
 
 XDCH-2#2 Warning
 Same min and max delay values on IO port  
 The same output delay of 8.900 ns has been defined on port 'hi_out[1]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 8.900 [get_ports {hi_out[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 66)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 66)
 Related violations: <none>
 
 XDCH-2#3 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[0]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#4 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[10]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#5 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[11]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#6 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[12]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#7 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[13]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#8 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[14]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#9 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[15]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#10 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[1]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#11 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[2]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#12 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[3]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#13 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[4]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#14 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[5]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#15 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[6]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#16 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[7]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#17 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[8]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 XDCH-2#18 Warning
 Same min and max delay values on IO port  
 The same output delay of 9.200 ns has been defined on port 'hi_inout[9]' relative to clock okHostClk for both max and min. Make sure this reflects the design intent.
 set_output_delay -clock [get_clocks okHostClk] -add_delay 9.200 [get_ports {hi_inout[*]}]
-Z:/STERN/96CH_RECORDER/96chFlySongVersion2/FPGA/designFiles/FPGAwSRAM 20221212/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
+C:/Users/sawtelles/Documents/GitHub/FlySong/FPGAsource/FPGAwSRAM/FPGAwSRAM.srcs/constrs_1/imports/96mic/xem7001.xdc (Line: 68)
 Related violations: <none>
 
 

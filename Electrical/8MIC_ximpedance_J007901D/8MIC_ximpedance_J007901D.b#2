@@ -191,7 +191,7 @@
 <wire x1="185" y1="28" x2="185" y2="12.7" width="0" layer="20"/>
 <wire x1="185" y1="12.7" x2="181" y2="12.7" width="0" layer="20"/>
 <wire x1="181" y1="12.7" x2="181" y2="0" width="0" layer="20"/>
-<text x="160.388571875" y="2" size="1" layer="21" font="vector">20231113</text>
+<text x="160.388571875" y="2" size="1" layer="21" font="vector">20200610</text>
 <text x="137.309709375" y="2" size="1" layer="21" font="vector">8MIC_XIMPEDANCE</text>
 <text x="171.6114125" y="1.9107375" size="1" layer="21" font="vector">S</text>
 <text x="171.600490625" y="1.43568125" size="1" layer="21" font="vector">S</text>
@@ -571,7 +571,7 @@
 <wire x1="115" y1="148.2" x2="115" y2="100.55" width="0.6" layer="248"/>
 <wire x1="123" y1="111.9" x2="123" y2="100.05" width="0" layer="249"/>
 <wire x1="60.15" y1="48.8" x2="69.8" y2="48.8" width="0.6" layer="249"/>
-<text x="151.8" y="2" size="1" layer="21" font="vector">J007901D</text>
+<text x="151.8" y="2" size="1" layer="21" font="vector">J007901C</text>
 </plain>
 <libraries>
 <library name="burr-brown">
@@ -2490,7 +2490,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="172.087" y="11.441" size="1" layer="25" font="vector" ratio="10"/>
 <attribute name="VALUE" x="168.433" y="20.427" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="U1" library="STEVES_BU" package="SOT-SC-5" value="TMP05/06" x="17.6" y="26.2" smashed="yes" rot="R90">
+<element name="U19" library="STEVES_BU" package="SOT-SC-5" value="TMP05/06" x="17.6" y="26.2" smashed="yes" rot="R90">
 <attribute name="VALUE" x="20.714" y="24.878" size="1" layer="27" rot="R90"/>
 <attribute name="NAME" x="20.047" y="24.498" size="1" layer="25" font="vector" ratio="10" rot="R180"/>
 </element>
@@ -4120,7 +4120,7 @@ design rules under a new name.</description>
 <wire x1="36" y1="23.274" x2="35.13" y2="22.344" width="0.25" layer="1"/>
 <wire x1="32.701" y1="22.687" x2="34.787" y2="22.687" width="0.25" layer="16"/>
 <wire x1="34.787" y1="22.687" x2="35.13" y2="22.344" width="0.25" layer="16"/>
-<contactref element="U1" pad="1"/>
+<contactref element="U19" pad="1"/>
 <wire x1="18.425" y1="25.55" x2="18.425" y2="25.475" width="0.254" layer="1"/>
 <wire x1="18.425" y1="25.475" x2="18.5" y2="25.4" width="0.254" layer="1"/>
 <wire x1="18.5" y1="25.4" x2="19.1" y2="25.4" width="0.254" layer="1"/>
@@ -4403,8 +4403,8 @@ design rules under a new name.</description>
 <via x="13.7" y="23.6" extent="1-16" drill="0.4318"/>
 <wire x1="13.7" y1="23.6" x2="14.65" y2="23.6" width="0.6096" layer="1"/>
 <wire x1="14.65" y1="23.6" x2="14.925" y2="23.825" width="0.6096" layer="1"/>
-<contactref element="U1" pad="3"/>
-<contactref element="U1" pad="5"/>
+<contactref element="U19" pad="3"/>
+<contactref element="U19" pad="5"/>
 <wire x1="18.425" y1="26.85" x2="17.9" y2="26.85" width="0.254" layer="1"/>
 <wire x1="17.9" y1="26.85" x2="16.775" y2="25.725" width="0.254" layer="1"/>
 <wire x1="16.775" y1="25.55" x2="16.775" y2="25.725" width="0.254" layer="1"/>
@@ -4471,7 +4471,7 @@ design rules under a new name.</description>
 <wire x1="14.3" y1="14.6" x2="13.6" y2="13.9" width="0.254" layer="1"/>
 <wire x1="13.6" y1="13.9" x2="13.6" y2="11.29" width="0.254" layer="1"/>
 <wire x1="13.6" y1="11.29" x2="12.47" y2="10.16" width="0.254" layer="1"/>
-<contactref element="U1" pad="2"/>
+<contactref element="U19" pad="2"/>
 <wire x1="18" y1="26.2" x2="18.425" y2="26.2" width="0.254" layer="1"/>
 </signal>
 <signal name="M1">
@@ -5036,7 +5036,7 @@ design rules under a new name.</description>
 <wire x1="10.4" y1="16.5" x2="11.65" y2="17.75" width="0.254" layer="16"/>
 <wire x1="11.65" y1="17.75" x2="12.44" y2="17.75" width="0.254" layer="16"/>
 <wire x1="12.44" y1="17.75" x2="12.47" y2="17.78" width="0.254" layer="16"/>
-<contactref element="U1" pad="4"/>
+<contactref element="U19" pad="4"/>
 <wire x1="14.652" y1="27.15" x2="16.475" y2="27.15" width="0.254" layer="1"/>
 <wire x1="16.475" y1="27.15" x2="16.775" y2="26.85" width="0.254" layer="1"/>
 <wire x1="74.372" y1="26.95" x2="74.488" y2="26.911" width="0" layer="19" extent="1-1"/>

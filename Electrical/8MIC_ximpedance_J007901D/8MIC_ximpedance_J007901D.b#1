@@ -191,7 +191,7 @@
 <wire x1="185" y1="28" x2="185" y2="12.7" width="0" layer="20"/>
 <wire x1="185" y1="12.7" x2="181" y2="12.7" width="0" layer="20"/>
 <wire x1="181" y1="12.7" x2="181" y2="0" width="0" layer="20"/>
-<text x="160.388571875" y="2" size="1" layer="21" font="vector">20231113</text>
+<text x="160.388571875" y="2" size="1" layer="21" font="vector">20200610</text>
 <text x="137.309709375" y="2" size="1" layer="21" font="vector">8MIC_XIMPEDANCE</text>
 <text x="171.6114125" y="1.9107375" size="1" layer="21" font="vector">S</text>
 <text x="171.600490625" y="1.43568125" size="1" layer="21" font="vector">S</text>
